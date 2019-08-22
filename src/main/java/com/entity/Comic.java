@@ -4,11 +4,11 @@ import java.util.Arrays;
 
 public class Comic {
     private int id;
-    private String name;
+    private String comicname;
     private String author;
     private String introduction;
     private String code;
-    private Comiclist[] type;
+    private Comiclist[] comictype;
     private String area;
     private String updatetime;
     private String photopath;
@@ -18,13 +18,13 @@ public class Comic {
     public Comic() {
     }
 
-    public Comic(int id, String name, String author, String introduction, String code, Comiclist[] type, String area, String updatetime, String photopath, double score, int heat) {
+    public Comic(int id, String comicname, String author, String introduction, String code, Comiclist[] comictype, String area, String updatetime, String photopath, double score, int heat) {
         this.id = id;
-        this.name = name;
+        this.comicname = comicname;
         this.author = author;
         this.introduction = introduction;
         this.code = code;
-        this.type = type;
+        this.comictype = comictype;
         this.area = area;
         this.updatetime = updatetime;
         this.photopath = photopath;
@@ -40,12 +40,12 @@ public class Comic {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getComicname() {
+        return comicname;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setComicname(String comicname) {
+        this.comicname = comicname;
     }
 
     public String getAuthor() {
@@ -72,12 +72,12 @@ public class Comic {
         this.code = code;
     }
 
-    public Comiclist[] getType() {
-        return type;
+    public Comiclist[] getComictype() {
+        return comictype;
     }
 
-    public void setType(Comiclist[] type) {
-        this.type = type;
+    public void setComictype(Comiclist[] comictype) {
+        this.comictype = comictype;
     }
 
     public String getArea() {
@@ -124,11 +124,11 @@ public class Comic {
     public String toString() {
         return "Comic{" +
                 "id=" + id +
-                ", name='" + name + '\'' +
+                ", comicname='" + comicname + '\'' +
                 ", author='" + author + '\'' +
                 ", introduction='" + introduction + '\'' +
                 ", code='" + code + '\'' +
-                ", type=" + Arrays.toString(type) +
+                ", comictype=" + Arrays.toString(comictype) +
                 ", area='" + area + '\'' +
                 ", updatetime='" + updatetime + '\'' +
                 ", photopath='" + photopath + '\'' +

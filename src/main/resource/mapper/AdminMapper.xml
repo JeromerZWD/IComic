@@ -27,5 +27,5 @@ select * from admin where username=#{username} and password=#{password}
 </select>
     <select id="countAdmin" resultType="int">
 select count(*) from admin
-    </select>
+</select>
 </mapper>
