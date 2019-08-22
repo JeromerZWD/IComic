@@ -1,0 +1,627 @@
+/* 清除样式 */
+ul,ol{
+    list-style: none;
+}
+h1,h2,h3,h4,h5{
+    margin: 0px;
+}
+a:hover, a:focus {
+    color: #23527c;
+    text-decoration: none;
+}
+/* a标签下划线 */
+/*字体设置*/
+.title-large{
+    font-weight: bolder;
+    text-align: center;
+    font:25px HelveticaLTStdBold, sans-serif;
+}
+.mytext-title2{
+    font-weight: bolder;
+    font:28px HelveticaLTStdRoman, sans-serif;
+}
+.mytext-title2-ml{
+    font-weight: bolder;
+    margin-left: 10px;
+    font:28px HelveticaLTStdRoman, sans-serif;
+}
+.mytext-title{
+    font-weight: bolder;
+    font:22px HelveticaLTStdRoman, sans-serif;
+}
+.mytext-p{
+    font-weight: bolder;
+    font-weight: 900;
+    font:14px JapanRegular, sans-serif;
+}
+.mytext-p2{
+    font-weight: bolder;
+    font:16px HelveticaLTStdBold, sans-serif;
+}
+.mytext-p3{
+    font-weight: bolder;
+    font:18px HelveticaLTStdBold, sans-serif;
+}
+.mytext-p3-indent{
+    font-weight: bolder;
+    text-indent: 18px;
+    font:18px HelveticaLTStdBold, sans-serif;
+}
+
+.f4{
+    margin-right:20px; 
+}
+/* 👆上面是自定义类样式 */
+/* *************************************************************** */
+/* 华丽的分割线 */
+/* *************************************************************** */
+/* 注册登录按钮 */
+.btn-lg, .btn-group-lg > .btn {
+    padding: 10px 16px;
+    margin-top: -8px;
+    margin-left: 20px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+}
+/* 注册登录按钮 */
+
+
+/* 模态框注册登录位置 */
+.form-group .code{
+    position: relative;
+    top: -30px;
+    right: -190px;
+    width: 180px;
+}
+.form-group .code a{
+    line-height: 10px;
+    padding-left: 10px;
+}
+/* 模态框注册登录位置 */
+
+/* 搜索框内容 */
+.form-control {
+    border-radius: 34px;
+}
+/* 搜索框位置 */
+.form-group {
+    margin-right: 60px;
+}
+/* 搜索框内容 */
+
+/* 轮播图内容 */
+div#slider-item {
+    position: relative;
+    top: -78px;
+    width: 605px;
+    height: 68px;
+    /* 要有宽度才能用margin auto */
+    margin: 0 auto;
+    overflow: hidden;
+}
+div#slider-item .left{
+    background: url(../images/icon/left.png) no-repeat center center;
+    margin-right: 8px;
+}
+div#slider-item .f1{
+    float: left;
+}
+div#slider-item .controll-btn{
+    width: 29px;
+    height: 100%;
+    cursor: pointer;
+}
+div#slider-item .item{
+    width: 530px;
+    height: 68px;
+    background: url(../images/icon/shack.png) no-repeat center center;
+    position: relative;
+    overflow: hidden;
+}
+div#slider-item .right{
+    background: url(../images/icon/right.png) no-repeat center center;
+    margin-left: 8px;
+}
+div#slider-item .item .smallpics{
+    margin-top: 4px;
+    position: absolute;
+}
+div#slider-item .item .smallpic{
+    float: left;
+    width: 94px;
+    height: 60px;
+    margin: 0 6px;
+    position: relative;
+    cursor: pointer;
+}
+div#slider-item .item .smallpic img{
+    width: 90px;
+    height: 46px;
+    /* 处理图片变形的问题 */
+    object-fit: cover;
+    border: 1px solid #000;
+    position: absolute;
+    top: 6px;
+    left: 1px;
+    z-index: 2;
+}
+/* 轮播图内容 */
+/* 漫画项内容 */
+div.info{
+    margin-top:-5px; 
+    background: url(../images/pattern-bg.png);
+    padding: 5px 0;
+}
+/* 图片和简介区分 */
+div.projects-band-nohidden .description,div.projects-band .description{
+    display: block;
+    height:40px;
+}
+/* 标题居中 */
+div.projects-band-nohidden .description .title,div.projects-band .description .title{
+    font-weight: bolder;
+    padding:5px 0px; 
+    text-align: center;
+    margin: 0;
+}
+div.info p{
+    margin:0 0 5px; 
+}
+/* 指定变色 */
+.description:hover .title{
+    color: #6cb132;
+}
+.inline-border:hover +div a .title{
+    color: #6cb132;
+}
+.selected{
+    color: #6cb132;
+}
+/* 漫画项内容 */
+/* 排行榜内容 */
+div#rank{
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+div#rank .rank-items{
+    height: 90px;
+    margin: 5px 0;
+    border-bottom: #c9c8c8 dashed 1px;
+}
+div#rank .rank-items a{
+    position: unset;
+    padding: unset;
+}
+div#rank .rank1,div#rank .rank2,div#rank .rank3{
+    width: 31.555555555555557%;
+    margin-right: 22px;
+    float: left;
+    min-height: 1px;
+}
+div#rank .rank-items img{
+    width: 120px;
+    height: 82px;
+    object-fit: cover;
+    border: 1px solid #000;
+}
+/* 排行处理 */
+div#rank .rank-items .rank-info{
+    padding-top: 5px;
+}
+div#rank .rank-items .rank-info span{
+    margin-top:20px; 
+    display: block;
+    height: 25px;
+    width: 25px;
+    background-color: darkorange;
+    text-align: center;
+    line-height: 25px;
+    margin: 0 10px;
+    border-radius: 25px;
+    color: white;
+}
+/* 标题处理 */
+div#rank .rank-items div .title{
+    margin-top:0px; 
+    font-weight: bold;
+    font-family: HelveticaLTStdRoman, sans-serif;
+}
+/* 文本介绍处理 */
+div#rank .rank-items div p{
+    width: 227px;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    overflow: hidden;
+}
+.mytext-title{
+    font-weight: bolder;
+    font:22px HelveticaLTStdRoman, sans-serif;
+}
+.mytext-p{
+    font-weight: bolder;
+    font-weight: 900;
+    font:14px JapanRegular, sans-serif;
+}
+.mytext-p2{
+    font-weight: bolder;
+    font:16px HelveticaLTStdBold, sans-serif;
+}
+/* 排行榜内容 */
+
+/* 👆上面是主页样式 */
+/* *************************************************************** */
+/* 华丽的分割线 */
+/* *************************************************************** */
+
+/* 漫画列表页面样式 */
+/* 自定义图标 */
+[my-icon="icon-gufeng"]
+{
+	display:block;
+	width:100%;
+	height:100%;
+    background:url(../images/icons/portfolio/gufeng.png);
+    background-size: cover;
+    position: relative;
+    top: 50%;
+    z-index: 99;
+	
+}
+[my-icon="icon-gaoxiao"]
+{
+	display:block;
+	width:100%;
+	height:100%;
+    background:url(../images/icons/portfolio/gaoxiao.png);
+    background-size: cover;
+    z-index: 99;
+	
+}
+[my-icon="icon-xianxia"]
+{
+	display:block;
+	width:100%;
+	height:100%;
+    background:url(../images/icons/portfolio/xianxia.png);
+    background-size: cover;
+    z-index: 99;
+	
+}
+[my-icon="icon-xiaoyuan"]
+{
+	display:block;
+	width:100%;
+	height:100%;
+    background:url(../images/icons/portfolio/xiaoyuan.png);
+    background-size: cover;
+    z-index: 99;	
+}
+[my-icon="icon-maoxian"]
+{
+	display:block;
+	width:100%;
+	height:100%;
+    background:url(../images/icons/portfolio/maoxian.png);
+    background-size: cover;
+    z-index: 99;
+	
+}
+[my-icon="icon-yanqing"]
+{
+	display:block;
+	width:100%;
+	height:100%;
+    background:url(../images/icons/portfolio/yanqing.png);
+    background-size: cover;
+    z-index: 99;
+	
+}
+[my-icon="icon-dushi"]
+{
+	display:block;
+	width:100%;
+	height:100%;
+    background:url(../images/icons/portfolio/dushi.png);
+    background-size: cover;
+    z-index: 99;
+	
+}
+[my-icon="icon-xuanhuan"]
+{
+	display:block;
+	width:100%;
+	height:100%;
+    background:url(../images/icons/portfolio/xuanhuan.png);
+    background-size: cover;
+	z-index: 99;
+}
+[my-icon="icon-more"]
+{
+	display:block;
+	width:80%;
+	height:80%;
+    background:url(../images/icons/portfolio/more.png);
+    background-size: cover;
+    z-index: 99;
+}
+[my-icon="icon-nan"]
+{
+	display:block;
+	width:100%;
+	height:100%;
+    background:url(../images/icons/portfolio/nan.png);
+    background-size: cover;
+    z-index: 99;
+	
+}
+[my-icon="icon-nv"]
+{
+	display:block;
+	width:100%;
+	height:100%;
+    background:url(../images/icons/portfolio/nv.png);
+    background-size: cover;
+    z-index: 99;
+}
+/* 自定义图标 */
+
+/* 漫画列表 */
+div#book-list{
+    width: 100%;
+    margin: 0 auto;
+}
+.list{
+    list-style: none;
+    margin-left: 10px;
+}
+.list li{
+    float: left;
+    margin: 0 15px;
+    position: relative;
+}
+.list div{
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+}
+.list-noset{
+    background-color: #1577b8;
+    border: #67A6D1 5px solid;
+}
+.up{
+    margin-top: -10px;
+}
+.list-select{
+    border: #6cb132 5px solid;
+    background-color: lawngreen
+}
+.list-active{
+    margin-top: -10px;
+    border: #6cb132 5px solid;
+    background-color: lawngreen
+}
+
+.list span{
+    width: 60px;
+    height: 60px;
+    margin:5px auto;
+}
+.list li p{
+    text-align: center;
+    margin-top: 10px; 
+}
+/* 漫画列表 */
+
+/* 漫画项 */
+ul.book-item li{
+    transition: all 0.3s ease 0s;
+}
+ul.book-item li:hover{
+transform: scale(1.1);
+}
+/* 漫画项 */
+/* 👆上面是漫画列表样式 */
+
+/* *************************************************************** */
+/* 华丽的分割线 */
+/* *************************************************************** */
+/* 漫画最新内容展示样式 */
+.new-pic .pic-items .item{
+    margin: 5px 0;
+}
+.new-pic .pic-items img,.pic-item-img{
+    width: 800px;
+}
+.focus{
+    margin: 0 15px;
+}
+div.unLogin{
+    text-align: center;
+}
+div.unLogin .unLogin-info{
+    display: block;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 auto;
+    border-radius:50px;
+    color: white;
+    background-color: #1275ba;
+}
+
+
+/* 👆上面是漫画最新内容展示样式 */
+
+
+
+
+
+
+/* *************************************************************** */
+/* 华丽的分割线 */
+/* *************************************************************** */
+/* 漫画目录样式 */
+/* 头部高度 */
+div#detail{
+    position: relative;
+    width: 100%;
+    height: 329px;
+    margin-bottom: 100px;
+}
+/* 黑条背景高度 */
+body.detail div.bg-wood {
+    display: block;
+    width: 100%;
+    height: 289px;
+    background: url(../images/bg-wood.jpg);
+    position: absolute;
+    top: 40px;
+    left: 0;
+}
+/* 信息位置和大小 */
+div#detail div#item-info{
+    width: 100%;
+    height: 360px;
+    display: block !important;
+    position: relative;
+    z-index: 3;
+    color: white;
+}
+/* 图片容器 */
+div#detail div#item-info .icon{
+    height: 100%;
+    float: left;
+}
+/* 图片设置 */
+div#detail div#item-info .icon img{
+    height: 100%;
+    border-radius:15px; 
+}
+/* 信息框大小,位置 */
+div#detail div#item-info .more-info{
+    margin: 50px 0px 0px 20px;
+    height: 270px;
+    width: 930px;
+    float: left;
+    padding: 5px 20px;
+}
+/* 控制行间距 */
+div.more-info h1,div.more-info h4{
+    margin-bottom: 5px;
+}
+/* 控制左右间距 */
+div.more-info .f2{
+    margin-right: 30px;
+}
+/* 简介信息容器 */
+div.more-info .synopsis{
+    text-indent: 36px;
+    height: 110px;
+    width: 890px;
+    /* 段落文本溢出处理 */
+    display: -webkit-box;
+    /* 省略替换 */
+    -webkit-box-orient: vertical;
+    /* 行数 */
+    -webkit-line-clamp: 5;
+    overflow: hidden;
+}
+/* 👆简介信息容器 */
+/* 章节信息 */
+div#catalog{
+    margin: 60px 0 135px;
+}
+div#catalog .catalog-info{
+    padding:30px 0px 30px 20px;
+    background-color: #fffefea1;
+}
+div#catalog .catalog-info .catalog-info-contant .catalog-item{
+    display: block;
+    width: 263px;
+    height: 30px;
+    margin-bottom: 20px;
+    line-height: 30px;
+    border-radius:10px; 
+    background-color: #eeeeeea8;
+}
+/* 显示全部章节*/
+div#catalog .catalog-info .show-all{
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50px;
+    color: white;
+    background-color: #1275ba;
+    margin-right:  20px;
+}
+div#catalog .catalog-info .clearfix{
+    margin-bottom: 30px;
+}
+/* 相似推荐 */
+div#catalog .catalog-info .projects-band-nohidden,div#catalog .catalog-info .projects-band-nohidden ul{
+    width: 870px;
+}
+div#catalog .catalog-info div.projects-band-nohidden ul li{
+    height: 260px;
+    margin-right: 5px;
+}
+div#catalog .catalog-info div.projects-band-nohidden .description{
+    height: 35px;
+}
+
+div#catalog .catalog-info div.projects-band-nohidden ul li a {
+    display: block;
+    width: 160px;
+    height: 190px;
+    position: relative;
+}
+div#catalog .catalog-info div.projects-band-nohidden ul li img{
+    width: 160px;
+}
+/* 右边内容 */
+div#catalog .ranks{
+    margin-bottom: 100px;
+}
+div#catalog .ranks .rank1,div#catalog .ranks .rank2,div#catalog .ranks .rank3{
+    background-color:#fffefea1;
+    margin-bottom: 30px;
+}
+/* 排行信息 */
+div.ranks .rank-items{
+    height: 130px;
+    margin: 5px 0;
+    padding: 0 5px;
+    border-bottom: #c9c8c8 dashed 1px;
+}
+div.ranks .rank-items a{
+    position: unset;
+    padding: unset;
+}
+div.ranks .rank-items img{
+    width: 100px;
+    object-fit: cover;
+    border: 1px solid #000;
+}
+/* 排行处理 */
+div.ranks .rank-items .rank-info{
+    padding-top: 5px;
+}
+/* 标题处理 */
+div.ranks .rank-items div .title{
+    margin-top:0px; 
+    font-weight: bold;
+    font-family: HelveticaLTStdRoman, sans-serif;
+}
+/* 文本介绍处理 */
+div.ranks .rank-items div p{
+    width: 227px;
+    display: -webkit-box;
+    /* 省略替换 */
+    -webkit-box-orient: vertical;
+    /* 行数 */
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+/* 👆上面是漫画漫画目录样式 */
