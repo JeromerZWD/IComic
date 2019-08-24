@@ -5,7 +5,9 @@ import com.mapper.ComicMapper;
 import com.service.ComicService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
+import java.util.Arrays;
 import java.util.List;
 @Service
 public class ComicServiceImpl implements ComicService {
@@ -32,7 +34,18 @@ public class ComicServiceImpl implements ComicService {
     }
 
     @Override
+    @Transactional(rollbackFor = RuntimeException.class)
     public int addComic(Comic comic) {
-        return comicMapper.addComic(comic);
+        int i=comicMapper.addComic(comic);
+        int comicid=comic.getId();
+        System.out.println(comicid);
+        Integer[] clids=comic.getClids();
+        comicMapper.insertComicList(comicid, Arrays.asList(clids));
+        return i;
+    }
+
+    @Override
+    public List<Comic> getComicByTypeId(int comiclistid) {
+        return comicMapper.getComicByTypeId(comiclistid);
     }
 }

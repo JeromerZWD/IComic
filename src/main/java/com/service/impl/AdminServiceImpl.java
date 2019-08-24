@@ -12,9 +12,10 @@ import java.util.List;
 public class AdminServiceImpl implements AdminService {
     @Autowired
     private AdminMapper adminMapper;
+
     @Override
-    public Admin logincheck(Admin admin) {
-        return adminMapper.logincheck(admin);
+    public Admin loginCheck(Admin admin) {
+        return adminMapper.loginCheck(admin);
     }
 
     @Override

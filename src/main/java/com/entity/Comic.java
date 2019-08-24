@@ -1,6 +1,7 @@
 package com.entity;
 
 import java.util.Arrays;
+import java.util.List;
 
 public class Comic {
     private int id;
@@ -8,28 +9,30 @@ public class Comic {
     private String author;
     private String introduction;
     private String code;
-    private Comiclist[] comictype;
     private String area;
     private String updatetime;
     private String photopath;
     private double score;
     private int heat;
+    private List<ComicList> comicLists;
+    private Integer[] clids;
 
     public Comic() {
     }
 
-    public Comic(int id, String comicname, String author, String introduction, String code, Comiclist[] comictype, String area, String updatetime, String photopath, double score, int heat) {
+    public Comic(int id, String comicname, String author, String introduction, String code, String area, String updatetime, String photopath, double score, int heat, List<ComicList> comicLists, Integer[] clids) {
         this.id = id;
         this.comicname = comicname;
         this.author = author;
         this.introduction = introduction;
         this.code = code;
-        this.comictype = comictype;
         this.area = area;
         this.updatetime = updatetime;
         this.photopath = photopath;
         this.score = score;
         this.heat = heat;
+        this.comicLists = comicLists;
+        this.clids = clids;
     }
 
     public int getId() {
@@ -72,14 +75,6 @@ public class Comic {
         this.code = code;
     }
 
-    public Comiclist[] getComictype() {
-        return comictype;
-    }
-
-    public void setComictype(Comiclist[] comictype) {
-        this.comictype = comictype;
-    }
-
     public String getArea() {
         return area;
     }
@@ -120,6 +115,22 @@ public class Comic {
         this.heat = heat;
     }
 
+    public List<ComicList> getComicLists() {
+        return comicLists;
+    }
+
+    public void setComicLists(List<ComicList> comicLists) {
+        this.comicLists = comicLists;
+    }
+
+    public Integer[] getClids() {
+        return clids;
+    }
+
+    public void setClids(Integer[] clids) {
+        this.clids = clids;
+    }
+
     @Override
     public String toString() {
         return "Comic{" +
@@ -128,12 +139,13 @@ public class Comic {
                 ", author='" + author + '\'' +
                 ", introduction='" + introduction + '\'' +
                 ", code='" + code + '\'' +
-                ", comictype=" + Arrays.toString(comictype) +
                 ", area='" + area + '\'' +
                 ", updatetime='" + updatetime + '\'' +
                 ", photopath='" + photopath + '\'' +
                 ", score=" + score +
                 ", heat=" + heat +
+                ", comicLists=" + comicLists +
+                ", clids=" + Arrays.toString(clids) +
                 '}';
     }
 }

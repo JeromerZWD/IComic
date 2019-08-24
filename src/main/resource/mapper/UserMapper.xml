@@ -79,6 +79,6 @@ update user set code=0 where id=#{id}
 select count(*) from user
 </select>
     <select id="getCloseUserByLoginName" resultType="com.entity.User" parameterType="String">
-        select * from user where loginname=#{loginname}
-    </select>
+select * from user where loginname=#{loginname}
+</select>
 </mapper>

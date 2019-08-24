@@ -67,7 +67,7 @@
                     <li class="nav_item"><a href="${pageContext.request.contextPath}/userList" target="item-page">
                             <span class="glyphicon glyphicon-user" aria-hidden="true">
                             </span><span class="font">&emsp;用户管理</span></a></li>
-                    <li class="nav_item"><a href="approve.html" target="item-page">
+                    <li class="nav_item"><a href="${pageContext.request.contextPath}/getComics" target="item-page">
                             <span class="glyphicon glyphicon-log-in" aria-hidden="true">
                             </span><span class="font">&emsp;漫画管理</span></a></li>
                     <li class="nav_item"><a href="${pageContext.request.contextPath}/commentList" target="item-page">
@@ -79,10 +79,10 @@
                     <li class="nav_item"><a href="${pageContext.request.contextPath}/closeList" target="item-page">
                             <span class="glyphicon glyphicon-equalizer" aria-hidden="true">
                             </span><span class="font">&emsp;封号管理</span></a></li>
-                    <li class="nav_item"><a href="player.html" target="item-page">
+                    <li class="nav_item"><a href="${pageContext.request.contextPath}/pages/admin/404.jsp" target="item-page">
                             <span class="glyphicon glyphicon-flag" aria-hidden="true">
                             </span><span class="font">&emsp;作家管理</span></a></li>
-                    <li class="nav_item"><a href="poster.html" target="item-page">
+                    <li class="nav_item"><a href="${pageContext.request.contextPath}/pages/admin/404.jsp" target="item-page">
                             <span class="glyphicon glyphicon-send" aria-hidden="true">
                             </span><span class="font">&emsp;广告管理</span></a></li>
                 </ul>

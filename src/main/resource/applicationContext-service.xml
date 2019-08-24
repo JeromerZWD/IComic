@@ -6,6 +6,6 @@
 
     <!--扫描service层-->
     <context:component-scan base-package="com.service">
-        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Service"/>
     </context:component-scan>
 </beans>

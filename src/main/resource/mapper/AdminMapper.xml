@@ -22,7 +22,7 @@
     <insert id="saveUser" parameterType="com.entity.User">
         insert into users(username,password) values(#{username},#{password})
     </insert>-->
-    <select id="logincheck" parameterType="com.entity.Admin" resultType="com.entity.Admin">
+    <select id="loginCheck" parameterType="com.entity.Admin" resultType="com.entity.Admin">
 select * from admin where username=#{username} and password=#{password}
 </select>
     <select id="countAdmin" resultType="int">

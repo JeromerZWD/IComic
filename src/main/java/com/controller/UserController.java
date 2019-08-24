@@ -61,6 +61,7 @@ public class UserController {
         SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         String dateString = formatter.format( new Date());
         user.setRegisterTime(dateString);
+        user.setPhotoPath("1.png");
         System.out.println(user);
         int a=userService.addUser(user);
         if (a>0){

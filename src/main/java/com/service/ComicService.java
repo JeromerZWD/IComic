@@ -13,6 +13,8 @@ public interface ComicService {
     Comic getComicById(int id);
     //通过id删除漫画
     int deleteComicById(int id);
-    //新增漫画
+    //新增漫画(mapper中 addComic+insertComicList 两个方法放一起了)
     int addComic(Comic comic);
+    //通过漫画类型id 查询漫画
+    List<Comic> getComicByTypeId(int comiclistid);
 }

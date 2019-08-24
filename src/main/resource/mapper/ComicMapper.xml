@@ -13,7 +13,7 @@ select * from comic order by id
     <select id="getComicSByOther" parameterType="com.entity.Comic" resultType="com.entity.Comic">
 select * from comic
 <where>
-<if test="name!=null and name!=''">
+<if test="comicname!=null and comicname!=''">
 comicname=#{comicname}
 </if>
 <if test="author!=null and author!=''">
@@ -22,7 +22,7 @@ and author=#{author}
 <if test="code!=null and code!=''">
 and code=#{code}
 </if>
-<if test="area!=null and area!=null">
+<if test="area!=null and area!=''">
 and area=#{area}
 </if>
 </where>
@@ -31,6 +31,16 @@ and area=#{area}
 select * from comic where id=#{id}
 </select>
     <insert id="addComic" parameterType="com.entity.Comic">
-insert into comic(comicname,author,introduction,code,comictype,area,photopath,score) value(#{comicname},#{author},#{introduction},#{code},#{comictype},#{area},#{photopath},#{score})
+insert into comic(comicname,author,introduction,code,area,updatetime,photopath,score)
+values(#{comicname},#{author},#{introduction},#{code},#{area},#{updatetime},#{photopath},#{score})
 </insert>
+    <insert id="insertComicList">
+insert into havalist(comicid,comiclistid) values
+<foreach collection="clids" item="i" separator=",">
+(#{comicid},#{i})
+</foreach>
+</insert>
+    <select id="getComicByTypeId" parameterType="int" resultType="com.entity.Comic">
+select comic.* from havelist,comic where comic.id=havelist.comicid and havelistid=#{havelistid}
+</select>
 </mapper>
