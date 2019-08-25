@@ -1,0 +1,16 @@
+.field-list{
+    font-size: 20px;
+}
+.field-list dt{
+	margin-right: 6px;
+	display: block;
+    float: left;
+}
+.field-list dd{
+	display: block;
+    float: left;
+    padding-left:25px ;
+}
+.pro-search{
+	display: block;
+}

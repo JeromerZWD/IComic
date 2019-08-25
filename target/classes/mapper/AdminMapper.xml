@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.AdminMapper">
+    <!-- List<User>getUsers(); -->
+   <!-- <select id="getUsers" resultType="com.entity.User">
+ select * from users;
+ </select>
+    &lt;!&ndash; int deleteUserById(Integer id) &ndash;&gt;
+    <delete id="deleteUserById" parameterType="int">
+ delete  from users where id=#{id}
+ </delete>
+    &lt;!&ndash; int updateUser(User user) &ndash;&gt;
+    <update id="updateUser" parameterType="User" >
+ update users set username=#{username},password=#{password} where id=#{id}
+ </update>
+    &lt;!&ndash; User getUserById(Integer id); &ndash;&gt;
+    <select id="getUserById" parameterType="int" resultType="com.entity.User">
+  select * from users where id=#{id}
+ </select>
+    <insert id="saveUser" parameterType="com.entity.User">
+        insert into users(username,password) values(#{username},#{password})
+    </insert>-->
+    <select id="loginCheck" parameterType="com.entity.Admin" resultType="com.entity.Admin">
+select * from admin where username=#{username} and password=#{password}
+</select>
+    <select id="countAdmin" resultType="int">
+select count(*) from admin
+</select>
+</mapper>

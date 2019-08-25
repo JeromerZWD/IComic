@@ -1,6 +1,7 @@
 package com.service.impl;
 
 import com.entity.Comic;
+import com.entity.HaveList;
 import com.mapper.ComicMapper;
 import com.service.ComicService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -38,9 +39,11 @@ public class ComicServiceImpl implements ComicService {
     public int addComic(Comic comic) {
         int i=comicMapper.addComic(comic);
         int comicid=comic.getId();
-        System.out.println(comicid);
-        Integer[] clids=comic.getClids();
-        comicMapper.insertComicList(comicid, Arrays.asList(clids));
+        int[] clids=comic.getClids();
+        System.out.println(clids);
+        for (int comiclistid:clids) {
+            comicMapper.insertComicList(new HaveList(comicid,comiclistid));
+        }
         return i;
     }
 

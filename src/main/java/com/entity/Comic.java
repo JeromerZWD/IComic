@@ -15,12 +15,12 @@ public class Comic {
     private double score;
     private int heat;
     private List<ComicList> comicLists;
-    private Integer[] clids;
+    private int[] clids;
 
     public Comic() {
     }
 
-    public Comic(int id, String comicname, String author, String introduction, String code, String area, String updatetime, String photopath, double score, int heat, List<ComicList> comicLists, Integer[] clids) {
+    public Comic(int id, String comicname, String author, String introduction, String code, String area, String updatetime, String photopath, double score, int heat, List<ComicList> comicLists, int[] clids) {
         this.id = id;
         this.comicname = comicname;
         this.author = author;
@@ -123,11 +123,11 @@ public class Comic {
         this.comicLists = comicLists;
     }
 
-    public Integer[] getClids() {
+    public int[] getClids() {
         return clids;
     }
 
-    public void setClids(Integer[] clids) {
+    public void setClids(int[] clids) {
         this.clids = clids;
     }
 

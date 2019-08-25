@@ -1,7 +1,9 @@
 package com.mapper;
 
 import com.entity.Comic;
+import com.entity.HaveList;
 import org.apache.ibatis.annotations.Options;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -15,10 +17,9 @@ public interface ComicMapper {
     //通过id删除漫画
     int deleteComicById(int id);
     //新增漫画
-    @Options(useGeneratedKeys = true, keyProperty = "id", keyColumn = "id")
     int addComic(Comic comic);
     //插入漫画类型的关联表
-    int insertComicList(int comicid,List<Integer> clids);
+    int insertComicList(HaveList haveList);
     //通过漫画类型id 查询漫画
     List<Comic> getComicByTypeId(int comiclistid);
 }

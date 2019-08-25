@@ -1,17 +1,24 @@
 package com.entity;
 
+import java.util.List;
+
 public class HaveList {
     private int id;
-    private Comic comic;
-    private ComicList comicList;
+    private int comicid;
+    private int comiclistid;
 
     public HaveList() {
     }
 
-    public HaveList(int id, Comic comic, ComicList comicList) {
+    public HaveList(int comicid, int comiclistid) {
+        this.comicid = comicid;
+        this.comiclistid = comiclistid;
+    }
+
+    public HaveList(int id, int comicid, int comiclistid) {
         this.id = id;
-        this.comic = comic;
-        this.comicList = comicList;
+        this.comicid = comicid;
+        this.comiclistid = comiclistid;
     }
 
     public int getId() {
@@ -22,28 +29,28 @@ public class HaveList {
         this.id = id;
     }
 
-    public Comic getComic() {
-        return comic;
+    public int getComicid() {
+        return comicid;
     }
 
-    public void setComic(Comic comic) {
-        this.comic = comic;
+    public void setComicid(int comicid) {
+        this.comicid = comicid;
     }
 
-    public ComicList getComicList() {
-        return comicList;
+    public int getComiclistid() {
+        return comiclistid;
     }
 
-    public void setComicList(ComicList comicList) {
-        this.comicList = comicList;
+    public void setComiclistid(int comiclistid) {
+        this.comiclistid = comiclistid;
     }
 
     @Override
     public String toString() {
         return "HaveList{" +
                 "id=" + id +
-                ", comic=" + comic +
-                ", comicList=" + comicList +
+                ", comicid=" + comicid +
+                ", comiclistid=" + comiclistid +
                 '}';
     }
 }

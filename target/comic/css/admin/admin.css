@@ -1,0 +1,94 @@
+/* 全局样式 */
+body,a,div,ul,li{
+    padding: 0;
+    margin: 0;
+}
+body{
+    
+    overflow-x: hidden;
+    background-color: #E9ECF3;
+
+}
+/* 顶部导航条样式 */
+.navbar-top{
+    height: 100px;
+    font-size: 30px;
+    /* 背景颜色 */
+    background-color: #3B3F51;
+    /* 字体颜色 */
+    color: #ABAFC1;
+}
+.navbar-top .button{
+    position: absolute;
+    left: 240px;
+    line-height: 100px;
+    top: 25px;
+}
+.navbar-top button{
+    background-color: #3B3F51;
+    font-size: 0.8em;
+}
+.navbar-top a{
+    margin: auto 0px;
+}
+.navbar-top li{
+    margin:0 5px;
+}
+.navbar-top .navbar-brand{
+    padding: 0;
+    margin: 0 20px;
+    height: 90px;
+}
+.navbar-top .navbar-brand a img{
+	height: 90px;
+	width: 200px;
+}
+/* 下方主体内容 */
+
+/* 左侧导航菜单样式 */
+.left_navbar{
+    text-indent: 5px;
+    font-size: 20px;
+    padding-top: 10px;
+}
+/* 改变宽度样式 */
+.short{
+    width: 100px;
+}
+.long{
+    width: 92%;
+}
+#left_navbar ul{
+    padding: 15px 0px;
+    background-color: white;
+}
+#left_navbar a{
+    height: 60px;
+    line-height: 40px;
+}
+/* 更改默认样式为现有样式 */
+.nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color:#F2F6F9;
+    }
+.left_active{
+    border-left: 5px solid #558BBA;
+    background-color: #F2F6F9; 
+}
+/* 主体内容部分 */
+.main{
+    width: 100%;
+    padding: 0 20px;
+}
+.main .item{
+    height: 800px;
+    padding: 0;
+}
+.main .iframe{
+    width:100%;
+    height: 100%;
+}
+iframe{
+    width: 100%;
+    height: 100%;
+}
