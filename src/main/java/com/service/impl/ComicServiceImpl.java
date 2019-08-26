@@ -1,5 +1,6 @@
 package com.service.impl;
 
+import com.entity.Chapter;
 import com.entity.Comic;
 import com.entity.HaveList;
 import com.mapper.ComicMapper;
@@ -50,5 +51,35 @@ public class ComicServiceImpl implements ComicService {
     @Override
     public List<Comic> getComicByTypeId(int comiclistid) {
         return comicMapper.getComicByTypeId(comiclistid);
+    }
+
+    @Override
+    public int addChapter(Chapter chapter) {
+        return comicMapper.addChapter(chapter);
+    }
+
+    @Override
+    public int deleteChapterById(int id) {
+        return comicMapper.deleteChapterById(id);
+    }
+
+    @Override
+    public List<Chapter> getChapterByNumber(Chapter chapter) {
+        return comicMapper.getChapterByNumber(chapter);
+    }
+
+    @Override
+    public List<Chapter> getChaptersByComicId(int comicid) {
+        return comicMapper.getChaptersByComicId(comicid);
+    }
+
+    @Override
+    public int updateTime(Comic comic) {
+        return comicMapper.updateTime(comic);
+    }
+
+    @Override
+    public int deleteTypeById(int comicid) {
+        return comicMapper.deleteTypeById(comicid);
     }
 }

@@ -40,4 +40,22 @@ insert into havelist(comicid,comiclistid) values(#{comicid},#{comiclistid})
     <select id="getComicByTypeId" parameterType="int" resultType="com.entity.Comic">
 select comic.* from havelist,comic where comic.id=havelist.comicid and havelistid=#{havelistid}
 </select>
+    <insert id="addChapter" parameterType="com.entity.Chapter">
+insert into chapter(comicid,cnumber,cname,ctime,content) values(#{comicid},#{cnumber},#{cname},#{ctime},#{content})
+</insert>
+    <select id="getChaptersByComicId" parameterType="int" resultType="com.entity.Chapter">
+select * from chapter where comicid=#{comicid} order by cnumber
+</select>
+    <delete id="deleteChapterById" parameterType="int">
+delete from chapter where id=#{id}
+</delete>
+    <select id="getChapterByNumber"  resultType="com.entity.Chapter">
+select * from chapter where cnumber=#{cnumber} and comicid=#{comicid}
+</select>
+    <update id="updateTime" parameterType="com.entity.Comic">
+update comic set updatetime=#{updatetime} where id=#{id}
+</update>
+<delete id="deleteTypeById" parameterType="int">
+    delete from havelist where comicid=#{comicid}
+</delete>
 </mapper>

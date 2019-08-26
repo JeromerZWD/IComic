@@ -3,22 +3,20 @@ package com.entity;
 public class Chapter {
     private int id;
     private int comicid;
-    private int number;
-    private String name;
-    private String introduction;
-    private String time;
+    private int cnumber;
+    private String cname;
+    private String ctime;
     private String content;
 
     public Chapter() {
     }
 
-    public Chapter(int id, int comicid, int number, String name, String introduction, String time, String content) {
+    public Chapter(int id, int comicid, int cnumber, String cname, String ctime, String content) {
         this.id = id;
         this.comicid = comicid;
-        this.number = number;
-        this.name = name;
-        this.introduction = introduction;
-        this.time = time;
+        this.cnumber = cnumber;
+        this.cname = cname;
+        this.ctime = ctime;
         this.content = content;
     }
 
@@ -38,38 +36,6 @@ public class Chapter {
         this.comicid = comicid;
     }
 
-    public int getNumber() {
-        return number;
-    }
-
-    public void setNumber(int number) {
-        this.number = number;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getIntroduction() {
-        return introduction;
-    }
-
-    public void setIntroduction(String introduction) {
-        this.introduction = introduction;
-    }
-
-    public String getTime() {
-        return time;
-    }
-
-    public void setTime(String time) {
-        this.time = time;
-    }
-
     public String getContent() {
         return content;
     }
@@ -78,15 +44,38 @@ public class Chapter {
         this.content = content;
     }
 
+    public int getCnumber() {
+        return cnumber;
+    }
+
+    public void setCnumber(int cnumber) {
+        this.cnumber = cnumber;
+    }
+
+    public String getCname() {
+        return cname;
+    }
+
+    public void setCname(String cname) {
+        this.cname = cname;
+    }
+
+    public String getCtime() {
+        return ctime;
+    }
+
+    public void setCtime(String ctime) {
+        this.ctime = ctime;
+    }
+
     @Override
     public String toString() {
         return "Chapter{" +
                 "id=" + id +
                 ", comicid=" + comicid +
-                ", number=" + number +
-                ", name='" + name + '\'' +
-                ", introduction='" + introduction + '\'' +
-                ", time='" + time + '\'' +
+                ", cnumber=" + cnumber +
+                ", cname='" + cname + '\'' +
+                ", ctime='" + ctime + '\'' +
                 ", content='" + content + '\'' +
                 '}';
     }

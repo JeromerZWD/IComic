@@ -78,7 +78,8 @@
             <td>${user.score}</td>
             <td>${user.heat}</td>
             <td>
-                <a href="#" class="btn btn-danger btn-xs" onclick="deleteUser(${user.id})">删除</a>
+                <a href="#" class="btn btn-danger btn-xs" onclick="deleteUser(${user.id})">删除漫画</a>
+                <a href="${pageContext.request.contextPath}/chapterList?comicid=${user.id}" class="btn btn-primary btn-xs">章节管理</a>
             </td>
         </tr>
     </c:forEach>
