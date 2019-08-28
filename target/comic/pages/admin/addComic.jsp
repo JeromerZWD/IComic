@@ -168,7 +168,7 @@
         </div>
         <div class="menu">类型:</div>
         <div class="kong" style="width: 300px;">
-            言情 <input type="checkbox" name="clids" value="1">
+            总裁 <input type="checkbox" name="clids" value="1">
             玄幻 <input type="checkbox" name="clids" value="2">
             都市 <input type="checkbox" name="clids" value="3">
             冒险 <input type="checkbox" name="clids" value="4"><br>

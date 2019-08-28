@@ -16,11 +16,12 @@ public class Comic {
     private int heat;
     private List<ComicList> comicLists;
     private int[] clids;
+    private String comicListsString;
 
     public Comic() {
     }
 
-    public Comic(int id, String comicname, String author, String introduction, String code, String area, String updatetime, String photopath, double score, int heat, List<ComicList> comicLists, int[] clids) {
+    public Comic(int id, String comicname, String author, String introduction, String code, String area, String updatetime, String photopath, double score, int heat, List<ComicList> comicLists, int[] clids, String comicListsString) {
         this.id = id;
         this.comicname = comicname;
         this.author = author;
@@ -33,6 +34,15 @@ public class Comic {
         this.heat = heat;
         this.comicLists = comicLists;
         this.clids = clids;
+        this.comicListsString = comicListsString;
+    }
+
+    public String getComicListsString() {
+        return comicListsString;
+    }
+
+    public void setComicListsString(String comicListsString) {
+        this.comicListsString = comicListsString;
     }
 
     public int getId() {
@@ -146,6 +156,7 @@ public class Comic {
                 ", heat=" + heat +
                 ", comicLists=" + comicLists +
                 ", clids=" + Arrays.toString(clids) +
+                ", comicListsString='" + comicListsString + '\'' +
                 '}';
     }
 }

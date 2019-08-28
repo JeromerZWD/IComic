@@ -72,7 +72,7 @@
         <div class="col-xs-8 col-md-4 item">
             <a href="${pageContext.request.contextPath}/closeList" class="thumbnail">
                 <h2 class="title">${countClose}
-                    <span class="glyphicon glyphicon-th-list right" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-remove-sign right" aria-hidden="true"></span>
                 </h2>
                 <p>
                 <h4 class="discription">封号总数</h4>
@@ -92,7 +92,7 @@
 <div class="col-xs-8 col-md-4 item">
     <a href="#" class="thumbnail">
         <h2 class="title">10000+
-            <span class="glyphicon glyphicon-check right" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-th-list right" aria-hidden="true"></span>
         </h2>
         <p>
         <h4 class="discription">热度总数</h4>

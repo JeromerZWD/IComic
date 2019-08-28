@@ -2,6 +2,7 @@ package com.mapper;
 
 import com.entity.Chapter;
 import com.entity.Comic;
+import com.entity.ComicList;
 import com.entity.HaveList;
 import org.apache.ibatis.annotations.Options;
 import org.apache.ibatis.annotations.Param;
@@ -35,4 +36,9 @@ public interface ComicMapper {
     int updateTime(Comic comic);
     //通过漫画id删除 漫画所有的类型
     int deleteTypeById(int comicid);
+    //热度+1 通过id
+    int addHeat(int comicid);
+    //通过漫画id查询 类型列表
+    List<ComicList> getComicList(int comicid);
+
 }

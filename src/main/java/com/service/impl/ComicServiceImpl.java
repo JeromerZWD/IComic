@@ -2,6 +2,7 @@ package com.service.impl;
 
 import com.entity.Chapter;
 import com.entity.Comic;
+import com.entity.ComicList;
 import com.entity.HaveList;
 import com.mapper.ComicMapper;
 import com.service.ComicService;
@@ -17,17 +18,54 @@ public class ComicServiceImpl implements ComicService {
     private ComicMapper comicMapper;
     @Override
     public List<Comic> getComics() {
-        return comicMapper.getComics();
+        List<Comic> list= comicMapper.getComics();
+        for (Comic c:list) {
+            String S="";
+            List<ComicList> list1=comicMapper.getComicList(c.getId());
+            for (int i=0;i<list1.size();i++){
+                String s=list1.get(i).getComictype();
+                S=S+s;
+                if (i<list1.size()-1){
+                    S=S+"/";
+                }
+            }
+            c.setComicListsString(S);
+        }
+        return list;
     }
 
     @Override
     public List<Comic> getComicSByOther(Comic comic) {
-        return comicMapper.getComicSByOther(comic);
+        List<Comic> list= comicMapper.getComicSByOther(comic);
+        for (Comic c:list) {
+            String S="";
+            List<ComicList> list1=comicMapper.getComicList(c.getId());
+            for (int i=0;i<list1.size();i++){
+                String s=list1.get(i).getComictype();
+                S=S+s;
+                if (i<list1.size()-1){
+                    S=S+"/";
+                }
+            }
+            c.setComicListsString(S);
+        }
+        return list;
     }
 
     @Override
     public Comic getComicById(int id) {
-        return comicMapper.getComicById(id);
+        Comic c=comicMapper.getComicById(id);
+        String S="";
+        List<ComicList> list1=comicMapper.getComicList(c.getId());
+        for (int i=0;i<list1.size();i++){
+            String s=list1.get(i).getComictype();
+            S=S+s;
+            if (i<list1.size()-1){
+                S=S+"/";
+            }
+        }
+        c.setComicListsString(S);
+        return c;
     }
 
     @Override
@@ -50,7 +88,20 @@ public class ComicServiceImpl implements ComicService {
 
     @Override
     public List<Comic> getComicByTypeId(int comiclistid) {
-        return comicMapper.getComicByTypeId(comiclistid);
+        List<Comic> list=comicMapper.getComicByTypeId(comiclistid);
+        for (Comic c:list) {
+            String S="";
+            List<ComicList> list1=comicMapper.getComicList(c.getId());
+            for (int i=0;i<list1.size();i++){
+                String s=list1.get(i).getComictype();
+                S=S+s;
+                if (i<list1.size()-1){
+                    S=S+"/";
+                }
+            }
+            c.setComicListsString(S);
+        }
+        return list;
     }
 
     @Override
@@ -81,5 +132,16 @@ public class ComicServiceImpl implements ComicService {
     @Override
     public int deleteTypeById(int comicid) {
         return comicMapper.deleteTypeById(comicid);
+    }
+
+    @Override
+    public int addHeat(int comicid) {
+        return comicMapper.addHeat(comicid);
+    }
+
+    @Override
+    public List<ComicList> getComicList(int comicid) {
+        List<ComicList> lists=comicMapper.getComicList(comicid);
+        return comicMapper.getComicList(comicid);
     }
 }

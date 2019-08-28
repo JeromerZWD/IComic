@@ -5,7 +5,7 @@
 <mapper namespace="com.mapper.ComicMapper">
 
     <select id="getComics" resultType="com.entity.Comic">
-select * from comic order by id
+select * from comic order by updatetime DESC
 </select>
     <delete id="deleteComicById" parameterType="int">
  delete  from comic where id=#{id}
@@ -26,6 +26,7 @@ and code=#{code}
 and area=#{area}
 </if>
 </where>
+order by heat desc
 </select>
     <select id="getComicById" parameterType="int" resultType="com.entity.Comic">
 select * from comic where id=#{id}
@@ -44,7 +45,7 @@ select comic.* from havelist,comic where comic.id=havelist.comicid and havelisti
 insert into chapter(comicid,cnumber,cname,ctime,content) values(#{comicid},#{cnumber},#{cname},#{ctime},#{content})
 </insert>
     <select id="getChaptersByComicId" parameterType="int" resultType="com.entity.Chapter">
-select * from chapter where comicid=#{comicid} order by cnumber
+select * from chapter where comicid=#{comicid} order by ctime desc
 </select>
     <delete id="deleteChapterById" parameterType="int">
 delete from chapter where id=#{id}
@@ -58,4 +59,10 @@ update comic set updatetime=#{updatetime} where id=#{id}
 <delete id="deleteTypeById" parameterType="int">
     delete from havelist where comicid=#{comicid}
 </delete>
+    <update id="addHeat" parameterType="int">
+update comic set heat=heat+1 where id=#{id}
+</update>
+    <select id="getComicList" parameterType="int" resultType="com.entity.ComicList">
+select comiclist.* from comiclist,havelist where havelist.comicid=#{comicid} and havelist.comiclistid=comiclist.id
+</select>
 </mapper>

@@ -13,6 +13,7 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.UUID;
@@ -188,5 +189,30 @@ public class ComicController {
         }else {
             return "error";
         }
+    }
+
+    /////////////////////////////////////////////
+    @RequestMapping("/index")
+    public String index(Model model){
+        Comic comic=new Comic();
+        List<Comic> heatList=comicService.getComicSByOther(comic);
+        comic.setArea("国漫");
+        List<Comic> list=comicService.getComicSByOther(comic);
+        Comic comic1=new Comic();
+        comic1.setArea("日漫");
+        List<Comic> list1=comicService.getComicSByOther(comic1);
+        Comic comic2=new Comic();
+        comic2.setArea("欧美");
+        List<Comic> list2=comicService.getComicSByOther(comic2);
+        List<Comic> timeList=comicService.getComics();
+
+        List<Integer> list3=new ArrayList<>();
+
+        model.addAttribute("timeList",timeList);
+        model.addAttribute("heatList",heatList);
+        model.addAttribute("guo",list);
+        model.addAttribute("ri",list1);
+        model.addAttribute("ou",list2);
+        return "index/index";
     }
 }

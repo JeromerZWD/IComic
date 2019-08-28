@@ -2,6 +2,7 @@ package com.service;
 
 import com.entity.Chapter;
 import com.entity.Comic;
+import com.entity.ComicList;
 
 import java.util.List;
 
@@ -30,4 +31,8 @@ public interface ComicService {
     int updateTime(Comic comic);
     //通过漫画id删除 漫画所有的类型
     int deleteTypeById(int comicid);
+    //热度+1 通过id
+    int addHeat(int comicid);
+    //通过漫画id查询 类型列表
+    List<ComicList> getComicList(int comicid);
 }

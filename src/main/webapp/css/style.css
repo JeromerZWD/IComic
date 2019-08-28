@@ -147,8 +147,6 @@ div#allslider {display:block;position:relative;}
 		
 	
 div.info-buttons {display:block;text-align:center;width:100%;position:relative;margin-bottom:45px}
-	.shadow-effect {position:absolute;bottom:0;left:0;width:100%;opacity:0}
-
 div.work-process {}
 	ul.work-list {list-style:none;padding-top:35px;height:175px;display:block;}
 	ul.work-list li {float:left;position:relative}
@@ -159,7 +157,7 @@ div.work-process {}
 		-webkit-border-radius: 82.5px;
 		-moz-border-radius: 82.5px;
 		border-radius: 82.5px;
-		behavior: url(../js/PIE.htc);
+		behavior: url(../js/index/PIE.htc);
 		margin-right:30px;background:#1577b8;display:block;width:165px;height:165px;text-align:center;color:#fff;font:20px/165px HelveticaLTStdBold, sans-serif;
 	}
 	ul.work-list li:last-child a {margin-right:0 !important}
@@ -247,7 +245,7 @@ div#our-service {margin-top:50px}
 		-webkit-border-radius: 80px;
 		-moz-border-radius: 80px;
 		border-radius: 80px;
-		behavior: url(../js/PIE.htc);
+		behavior: url(../js/index/PIE.htc);
 		background:#1577b8;
 	}
 	a:hover.sphere {background-color:#6cb132}
@@ -269,7 +267,7 @@ div.team-blog {margin:60px 0 135px;}
 div.blog-entry {position:relative;margin:20px 0 0;padding-bottom:25px}
 	div.blog-excerpt {padding-left:90px;position:relative}
 	div.blog-excerpt h2 {color:#2a2c38;font:bold 24px HelveticaLTStdLight, sans-serif;margin-bottom:10px}
-	div.blog-excerpt p.blog-excerpt-bottom {position:absolute;left:90;bottom:-25px}
+	div.blog-excerpt p.blog-excerpt-bottom {position:absolute;left:90px;bottom:-25px}
 	div.date-blog {margin-top:12px}
 	span.circle-area, div.circle-area
 	{
@@ -277,7 +275,7 @@ div.blog-entry {position:relative;margin:20px 0 0;padding-bottom:25px}
 		-webkit-border-radius: 37px;
 		-moz-border-radius: 37px;
 		border-radius: 37px;
-		behavior: url(../js/PIE.htc);
+		behavior: url(../js/index/PIE.htc);
 		margin-right: 30px;
 		background: #33b0b7;
 		display: block;
@@ -351,7 +349,7 @@ a.portfolio-sphere {
 	-webkit-border-radius: 38.5px;
 	-moz-border-radius: 38.5px;
 	border-radius: 38.5px;
-	behavior: url(../js/PIE.htc);
+	behavior: url(../js/index/PIE.htc);
 	background:#1577b8;
 	position:relative;
 	color:#818181;
@@ -374,7 +372,7 @@ height:77px;
 -webkit-border-radius: 38.5px;
 -moz-border-radius: 38.5px;
 border-radius: 38.5px;
-behavior: url(../js/PIE.htc);
+behavior: url(../js/index/PIE.htc);
 background-color:#1577b8;
 position:relative;
 color:#818181;
@@ -409,7 +407,7 @@ div.aside-contact {text-align:center}
 			-webkit-border-radius: 34px;
 			-moz-border-radius: 34px;
 			border-radius: 34px;
-			behavior: url(../js/PIE.htc);
+			behavior: url(../js/index/PIE.htc);
 			background-color:#1577b8;
 			position:relative;
 			color:#818181;
