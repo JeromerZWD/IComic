@@ -7,17 +7,27 @@ public class Chapter {
     private String cname;
     private String ctime;
     private String content;
+    private String comicname;
 
     public Chapter() {
     }
 
-    public Chapter(int id, int comicid, int cnumber, String cname, String ctime, String content) {
+    public Chapter(int id, int comicid, int cnumber, String cname, String ctime, String content, String comicname) {
         this.id = id;
         this.comicid = comicid;
         this.cnumber = cnumber;
         this.cname = cname;
         this.ctime = ctime;
         this.content = content;
+        this.comicname = comicname;
+    }
+
+    public String getComicname() {
+        return comicname;
+    }
+
+    public void setComicname(String comicname) {
+        this.comicname = comicname;
     }
 
     public int getId() {
@@ -77,6 +87,7 @@ public class Chapter {
                 ", cname='" + cname + '\'' +
                 ", ctime='" + ctime + '\'' +
                 ", content='" + content + '\'' +
+                ", comicname='" + comicname + '\'' +
                 '}';
     }
 }

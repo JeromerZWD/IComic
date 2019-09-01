@@ -15,4 +15,7 @@ select count(*) from message
     <select id="getMessagesByName" parameterType="String" resultType="com.entity.Message">
 select * from message where name=#{name}
 </select>
+    <insert id="addMessage" parameterType="com.entity.Message">
+insert into message(mname,email,message) values(#{mname},#{email},#{message})
+</insert>
 </mapper>

@@ -5,13 +5,14 @@ import java.util.List;
 public class ComicList {
     private int id;
     private String comictype;
+    private  Comic comic;
     public ComicList() {
     }
 
-    public ComicList(int id, String comictype) {
+    public ComicList(int id, String comictype,Comic comic) {
         this.id = id;
         this.comictype = comictype;
-
+        this.comic=comic;
     }
 
     public int getId() {
@@ -30,11 +31,20 @@ public class ComicList {
         this.comictype = comictype;
     }
 
+    public Comic getComic() {
+        return comic;
+    }
+
+    public void setComic(Comic comic) {
+        this.comic = comic;
+    }
+
     @Override
     public String toString() {
         return "ComicList{" +
                 "id=" + id +
                 ", comictype='" + comictype + '\'' +
+                ", comic=" + comic +
                 '}';
     }
 }

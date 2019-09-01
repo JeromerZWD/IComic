@@ -17,25 +17,25 @@ select * from user where code!=1 order by id
     <update id="updateUser" parameterType="User" >
  update user
 <set>
-<if test="username!=null">
-username=#{username}
+<if test="username!=null and username!=''">
+username=#{username},
 </if>
-<if test="password!=null">
-password=#{password}
+<if test="password!=null and password!=''">
+password=#{password},
 </if>
-<if test="telephone!=null">
-telephone=#{telephone}
+<if test="telephone!=null and telephone!=''">
+telephone=#{telephone},
 </if>
-<if test="email!=null">
-email=#{email}
+<if test="email!=null and email!=''">
+email=#{email},
 </if>
-<if test="gender!=null">
-gender=#{gender}
+<if test="gender!=null and gender!=''">
+gender=#{gender},
 </if>
-<if test="photoPath!=null">
-photoPath=#{photoPath}
+<if test="photoPath!=null and photoPath!=''">
+photoPath=#{photoPath},
 </if>
-<if test="code!=null">
+<if test="code!=null and code!=''">
 code=#{code}
 </if>
 </set>
@@ -46,7 +46,7 @@ id=#{id}
 </where>
 </update>
     <!-- User getUserById(Integer id); -->
-<select id="getUserById" parameterType="com.entity.User" resultType="com.entity.User">
+<select id="getUserByOther" parameterType="com.entity.User" resultType="com.entity.User">
 select * from user
 <where>
 <if test="username!=null and username!=''">
@@ -60,11 +60,14 @@ and gender=#{gender}
 </if>
 </where>
 </select>
+<select id="getUserById" parameterType="int" resultType="com.entity.User">
+    select * from user where id=#{id}
+</select>
     <insert id="saveUser" parameterType="com.entity.User">
 insert into user(username,loginname,password,registerTime) values(#{username},#{loginname},#{password},#{registerTime})
 </insert>
     <insert id="addUser" parameterType="com.entity.User">
-insert into user(username,loginname,password,telephone,email,gender,registerTime) values(#{username},#{loginname},#{password},#{telephone},#{email},#{gender},#{registerTime})
+insert into user(username,loginname,password,telephone,email,gender,photoPath,registerTime) values(#{username},#{loginname},#{password},#{telephone},#{email},#{gender},#{photoPath},#{registerTime})
 </insert>
     <update id="closeUser" parameterType="int">
 update user set code=1 where id=#{id}
@@ -81,4 +84,7 @@ select count(*) from user
     <select id="getCloseUserByLoginName" resultType="com.entity.User" parameterType="String">
 select * from user where loginname=#{loginname}
 </select>
+    <select id="loginCheck" parameterType="com.entity.User" resultType="com.entity.User">
+select * from user where loginname=#{loginname} and password=#{password}
+    </select>
 </mapper>

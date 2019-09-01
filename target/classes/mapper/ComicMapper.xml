@@ -4,8 +4,25 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.mapper.ComicMapper">
 
-    <select id="getComics" resultType="com.entity.Comic">
-select * from comic order by updatetime DESC
+    <resultMap id="getComics" type="com.entity.Comic">
+        <id property="id" column="id"/>
+        <result property="comicname" column="comicname"/>
+        <result property="author" column="author"/>
+        <result property="introduction" column="introduction"/>
+        <result property="ccode" column="ccode"/>
+        <result property="area" column="area"/>
+        <result property="updatetime" column="updatetime"/>
+        <result property="photopath" column="photopath"/>
+        <result property="score" column="score"/>
+        <result property="heat" column="heat"/>
+        <collection property="comicLists" ofType="com.entity.ComicList">
+            <id property="id" column="clid"/>
+            <result property="comictype" column="comictype"/>
+        </collection>
+    </resultMap>
+    <select id="getComics" resultMap="getComics">
+/*select * from comic order by updatetime DESC*/
+select comic.*,comiclist.id clid,comiclist.comictype from comic,havelist,comiclist WHERE comic.id=havelist.comicid and havelist.comiclistid=comiclist.id  order by comic.updatetime DESC
 </select>
     <delete id="deleteComicById" parameterType="int">
  delete  from comic where id=#{id}
@@ -19,8 +36,8 @@ comicname=#{comicname}
 <if test="author!=null and author!=''">
 and author=#{author}
 </if>
-<if test="code!=null and code!=''">
-and code=#{code}
+<if test="ccode!=null and ccode!=''">
+and ccode=#{ccode}
 </if>
 <if test="area!=null and area!=''">
 and area=#{area}
@@ -32,14 +49,14 @@ order by heat desc
 select * from comic where id=#{id}
 </select>
     <insert id="addComic" parameterType="com.entity.Comic"  useGeneratedKeys ="true"  keyProperty = "id" keyColumn = "id">
-insert into comic(comicname,author,introduction,code,area,updatetime,photopath,score)
-values(#{comicname},#{author},#{introduction},#{code},#{area},#{updatetime},#{photopath},#{score})
+insert into comic(comicname,author,introduction,ccode,area,updatetime,photopath,score)
+values(#{comicname},#{author},#{introduction},#{ccode},#{area},#{updatetime},#{photopath},#{score})
 </insert>
     <insert id="insertComicList" parameterType="com.entity.HaveList">
 insert into havelist(comicid,comiclistid) values(#{comicid},#{comiclistid})
 </insert>
     <select id="getComicByTypeId" parameterType="int" resultType="com.entity.Comic">
-select comic.* from havelist,comic where comic.id=havelist.comicid and havelistid=#{havelistid}
+select comic.* from havelist,comic where comic.id=havelist.comicid and havelist.comiclistid=#{comiclistid}
 </select>
     <insert id="addChapter" parameterType="com.entity.Chapter">
 insert into chapter(comicid,cnumber,cname,ctime,content) values(#{comicid},#{cnumber},#{cname},#{ctime},#{content})
@@ -64,5 +81,8 @@ update comic set heat=heat+1 where id=#{id}
 </update>
     <select id="getComicList" parameterType="int" resultType="com.entity.ComicList">
 select comiclist.* from comiclist,havelist where havelist.comicid=#{comicid} and havelist.comiclistid=comiclist.id
+</select>
+    <select id="getChapter" resultType="com.entity.Chapter">
+select * from chapter order by ctime desc
 </select>
 </mapper>

@@ -2,16 +2,16 @@ package com.entity;
 
 public class Message {
     private int id;
-    private String name;
+    private String mname;
     private String email;
     private String message;
 
     public Message() {
     }
 
-    public Message(int id, String name, String email, String message) {
+    public Message(int id, String mname, String email, String message) {
         this.id = id;
-        this.name = name;
+        this.mname = mname;
         this.email = email;
         this.message = message;
     }
@@ -24,12 +24,12 @@ public class Message {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getMname() {
+        return mname;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setMname(String mname) {
+        this.mname = mname;
     }
 
     public String getEmail() {
@@ -52,7 +52,7 @@ public class Message {
     public String toString() {
         return "Message{" +
                 "id=" + id +
-                ", name='" + name + '\'' +
+                ", mname='" + mname + '\'' +
                 ", email='" + email + '\'' +
                 ", message='" + message + '\'' +
                 '}';

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Detail Admin - My Info</title>
+    
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+    <!-- bootstrap -->
+    <link href="css/bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="css/bootstrap/bootstrap-responsive.css" rel="stylesheet" />
+    <link href="css/bootstrap/bootstrap-overrides.css" type="text/css" rel="stylesheet" />
+
+    <!-- global styles -->
+    <link rel="stylesheet" type="text/css" href="css/layout.css" />
+    <link rel="stylesheet" type="text/css" href="css/elements.css" />
+    <link rel="stylesheet" type="text/css" href="css/icons.css" />
+
+    <!-- libraries -->
+    <link rel="stylesheet" type="text/css" href="css/lib/font-awesome.css" />
+    
+    <!-- this page specific styles -->
+    <link rel="stylesheet" href="css/compiled/personal-info.css" type="text/css" media="screen" />
+
+    <!-- open sans font -->
+    <link href='http://fonts.useso.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css' />
+<script>
+	function fun1(){
+		var form=document.getElementById("userform");
+		var file=document.getElementById("userfile");
+		file.click();
+		file.onchange=function(){
+			form.submit();
+		}
+		
+	}
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+<body>
+
+
+	<!-- main container .wide-content is used for this layout without sidebar :)  -->
+	
+    <div class="content wide-content">
+        <div class="container-fluid">
+            <div class="settings-wrapper" id="pad-wrapper">
+                <!-- avatar column -->
+                <div class="span3 avatar-box">
+                    <div class="personal-image">
+                        <img src="img/personal-info.png" class="avatar img-circle" onclick="fun1()"/>
+                       <form  id="userform" style="display: none;" method="post" enctype="multipart/form-data" action="">
+                       <input type="file" id="userfile" name="file" /> 
+                       </form>
+                       
+                    </div>
+                </div>
+
+                <!-- edit form column -->
+                <div class="span7 personal-info">
+                    <h5 class="personal-title">Personal info</h5>
+
+                    <form>
+                    	<input type="text" name="id" style="display: none;"/>
+                        <div class="field-box">
+                            <label>User name:</label>
+                            <input class="span5 inline-input" type="text" name="username" value="" />
+                        </div>
+                        <div class="field-box">
+                            <label>Telephone:</label>
+                            <input class="span5 inline-input" type="text" name="telephone" value="" />
+                        </div>
+                        <div class="field-box">
+                            <label>Email:</label>
+                            <input class="span5 inline-input" type="text" name="email" value="" />
+                        </div>
+                        <div class="field-box">
+                            <label>Gender:</label>
+                            <div class="ui-select">
+                                <select id="user_time_zone" name="gender">
+                                    <option value="男" />男
+                                    <option value="女" />女                               
+                                </select>
+                            </div>
+                        </div>
+                        <div class="span6 field-box actions">
+                            <input type="button" class="btn-glow primary" value="Save Changes" />
+                            <span>OR</span>
+                            <input type="reset" value="Cancel" class="reset" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end main container -->
+
+
+	<!-- scripts -->
+    <script src="js/jquery-latest.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/theme.js"></script>
+
+</body>
+</html>

@@ -8,7 +8,7 @@ public interface UserService {
     // 查询所有用户信息
     List<User> getUsers();
     // 通过（id 或 gender 或者id+gender）查询用户
-    List<User> getUserById(User user);
+    List<User> getUserByOther(User user);
     // 删除用户
     int deleteUserById(Integer id);
     // 修改信息
@@ -27,4 +27,8 @@ public interface UserService {
     int openUser(int id);
     //查询用户数量
     int countUser();
+    //通过用户id查询用户
+    User getUserById(int id);
+    //登录验证
+    User loginCheck(User user);
 }

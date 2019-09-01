@@ -18,8 +18,8 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public List<User> getUserById(User user) {
-        return userMapper.getUserById(user);
+    public List<User> getUserByOther(User user) {
+        return userMapper.getUserByOther(user);
     }
 
     @Override
@@ -65,5 +65,15 @@ public class UserServiceImpl implements UserService {
     @Override
     public int countUser() {
         return userMapper.countUser();
+    }
+
+    @Override
+    public User getUserById(int id) {
+        return userMapper.getUserById(id);
+    }
+
+    @Override
+    public User loginCheck(User user) {
+        return userMapper.loginCheck(user);
     }
 }

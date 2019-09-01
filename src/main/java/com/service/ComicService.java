@@ -35,4 +35,6 @@ public interface ComicService {
     int addHeat(int comicid);
     //通过漫画id查询 类型列表
     List<ComicList> getComicList(int comicid);
+    //查询所有章节
+    List<Chapter> getChapter();
 }

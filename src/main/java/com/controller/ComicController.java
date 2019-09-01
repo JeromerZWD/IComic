@@ -2,11 +2,13 @@ package com.controller;
 
 import com.entity.Chapter;
 import com.entity.Comic;
+import com.entity.HaveList;
 import com.service.ComicService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -42,7 +44,6 @@ public class ComicController {
      */
     @RequestMapping("/addComic")
     public String addComic(Comic comic, MultipartFile file){
-        System.out.println(file);
         // 图片上传
         // 设置图片名称，不能重复，可以使用uuid
         String picName = UUID.randomUUID().toString();
@@ -206,13 +207,35 @@ public class ComicController {
         List<Comic> list2=comicService.getComicSByOther(comic2);
         List<Comic> timeList=comicService.getComics();
 
-        List<Integer> list3=new ArrayList<>();
+        List<Chapter> list3=comicService.getChapter();
+        for (int i=0;i<3;i++){
+            list3.get(i).setComicname(comicService.getComicById(list3.get(i).getComicid()).getComicname());
+        }
 
         model.addAttribute("timeList",timeList);
         model.addAttribute("heatList",heatList);
         model.addAttribute("guo",list);
         model.addAttribute("ri",list1);
         model.addAttribute("ou",list2);
+        model.addAttribute("zhang",list3);
+
         return "index/index";
+    }
+    @RequestMapping("/protfolio")
+    public String protfolio(Model model, Comic comic){
+        List<Comic> list=new ArrayList<>();
+        if (comic.getArea()!=null || comic.getCcode()!=null){
+            list=comicService.getComicSByOther(comic);
+        }else {
+            list = comicService.getComics();
+        }
+        model.addAttribute("comicList",list);
+        return "index/protfolio";
+    }
+    @RequestMapping("protfolio1")
+    public String protfolio1(Model model,int comiclistid){
+        List<Comic> list=comicService.getComicByTypeId(comiclistid);
+        model.addAttribute("comicList",list);
+        return "index/protfolio";
     }
 }

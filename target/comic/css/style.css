@@ -265,7 +265,7 @@ div.team-blog {margin:60px 0 135px;}
 	div.more-proj {margin-top:40px}
 
 div.blog-entry {position:relative;margin:20px 0 0;padding-bottom:25px}
-	div.blog-excerpt {padding-left:90px;position:relative}
+	div.blog-excerpt {position:relative}
 	div.blog-excerpt h2 {color:#2a2c38;font:bold 24px HelveticaLTStdLight, sans-serif;margin-bottom:10px}
 	div.blog-excerpt p.blog-excerpt-bottom {position:absolute;left:90px;bottom:-25px}
 	div.date-blog {margin-top:12px}
@@ -275,11 +275,9 @@ div.blog-entry {position:relative;margin:20px 0 0;padding-bottom:25px}
 		-webkit-border-radius: 37px;
 		-moz-border-radius: 37px;
 		border-radius: 37px;
-		behavior: url(../js/index/PIE.htc);
 		margin-right: 30px;
-		background: #33b0b7;
 		display: block;
-		width: 74px;
+		width: 600px;
 		height: 74px;
 		text-align: center;
 		color: #555;
@@ -323,7 +321,7 @@ div#footer {background:url(../images/bg-wood.jpg) repeat-x;display:block;height:
 div#all_page_header {display:block;position:relative;margin-top:40px;}
 	div.bg_wood_page {display:block;width:100%;height:77px;position:absolute;top:25px;left:0;background:url(../images/page_header.jpg) repeat-x}
 	div#page_header {display:block;height:120px;color:#fff;background:#1577b8;}
-	div#page_header h1 {font-size:45px;line-height:120px;margin-left:35px;font-family:AlexonBoldRegular, sans-serif;}
+	div#page_header h1 {font-size:45px;line-height:120px;margin-left:35px;font-family:AlexonBoldRegular, sans-serif;text-align: left;}
 	div#page_header div.intro-description {position:absolute;top:35px;right:35px;text-align:right;font:20px/28px HelveticaLTStdRoman, sans-serif;padding-left:25%}
 	
 div.content {display:block;margin:50px auto 135px}

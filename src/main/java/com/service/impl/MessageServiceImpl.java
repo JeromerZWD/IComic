@@ -31,4 +31,9 @@ public class MessageServiceImpl implements MessageService {
     public List<Message> getMessagesByName(String name) {
         return messageMapper.getMessagesByName(name);
     }
+
+    @Override
+    public int addMessage(Message message) {
+        return messageMapper.addMessage(message);
+    }
 }

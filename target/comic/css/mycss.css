@@ -63,6 +63,9 @@ a:hover, a:focus {
     font-size: 18px;
     line-height: 1.3333333;
     border-radius: 6px;
+    position: absolute;
+    left: 1300px;
+    top: 32px;
 }
 /* 注册登录按钮 */
 
@@ -74,6 +77,14 @@ a:hover, a:focus {
     right: -190px;
     width: 180px;
 }
+
+.login_success{
+    position: absolute;
+    left: 1300px;
+    top: 20px;
+    width: 200px;
+}
+
 .form-group .code a{
     line-height: 10px;
     padding-left: 10px;
@@ -246,7 +257,8 @@ div#rank .rank-items div p{
 }
 .mytext-p2{
     font-weight: bolder;
-    font:16px HelveticaLTStdBold, sans-serif;
+    font:24px HelveticaLTStdBold, sans-serif;
+    text-align: center;
 }
 /* 排行榜内容 */
 

@@ -21,7 +21,7 @@ public class ComicServiceImpl implements ComicService {
         List<Comic> list= comicMapper.getComics();
         for (Comic c:list) {
             String S="";
-            List<ComicList> list1=comicMapper.getComicList(c.getId());
+            List<ComicList> list1=c.getComicLists();
             for (int i=0;i<list1.size();i++){
                 String s=list1.get(i).getComictype();
                 S=S+s;
@@ -143,5 +143,10 @@ public class ComicServiceImpl implements ComicService {
     public List<ComicList> getComicList(int comicid) {
         List<ComicList> lists=comicMapper.getComicList(comicid);
         return comicMapper.getComicList(comicid);
+    }
+
+    @Override
+    public List<Chapter> getChapter() {
+        return comicMapper.getChapter();
     }
 }

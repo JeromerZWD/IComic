@@ -23,7 +23,7 @@
 <div class="panel panel-default">
     <!-- 搜索部分 -->
     <div class="panel-body">
-        <form class="form-inline" method="get" action="${pageContext.request.contextPath}/getUserById">
+        <form class="form-inline" method="get" action="${pageContext.request.contextPath}/getUserByOther">
             <div class="form-group">
                 <label for="loginName">用户名</label>
                 <input type="text" class="form-control" id="loginName" name="username">

@@ -13,4 +13,6 @@ public interface MessageMapper {
     int countMessage();
     //通过用户名查留言
     List<Message> getMessagesByName(String name);
+    //添加留言
+    int addMessage(Message message);
 }

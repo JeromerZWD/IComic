@@ -14,33 +14,33 @@
 /*HelveticaLTStdBold*/
 @font-face {
     font-family: 'HelveticaLTStdBold';
-    src: url('../fonts/helveticaltstd-bold-webfont.eot');
-    src: url('../fonts/helveticaltstd-bold-webfont.eot@#iefix') format('embedded-opentype'),
-         url('../fonts/helveticaltstd-bold-webfont.woff') format('woff'),
+    src: url('fonts/helveticaltstd-bold-webfont.eot');
+    src: url('fonts/helveticaltstd-bold-webfont.eot@#iefix') format('embedded-opentype'),
+         url('fonts/helveticaltstd-bold-webfont.woff') format('woff'),
          url('fonts/helveticaltstd-bold-webfont.ttf') format('truetype'),
-         url('../fonts/helveticaltstd-bold-webfont.svg#HelveticaLTStdBold') format('svg');
+         url('fonts/helveticaltstd-bold-webfont.svg#HelveticaLTStdBold') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 /*HelveticaLTStdLight*/
 @font-face {
     font-family: 'HelveticaLTStdLight';
-    src: url('../fonts/helveticaltstd-light-webfont.eot');
-    src: url('../fonts/helveticaltstd-light-webfont.eot@#iefix') format('embedded-opentype'),
-         url('../fonts/helveticaltstd-light-webfont.woff') format('woff'),
-         url('../fonts/helveticaltstd-light-webfont.ttf') format('truetype'),
-         url('../fonts/helveticaltstd-light-webfont.svg#HelveticaLTStdLight') format('svg');
+    src: url('fonts/helveticaltstd-light-webfont.eot');
+    src: url('fonts/helveticaltstd-light-webfont.eot@#iefix') format('embedded-opentype'),
+         url('fonts/helveticaltstd-light-webfont.woff') format('woff'),
+         url('fonts/helveticaltstd-light-webfont.ttf') format('truetype'),
+         url('fonts/helveticaltstd-light-webfont.svg#HelveticaLTStdLight') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 /*HelveticaLTStdRoman*/
 @font-face {
     font-family: 'HelveticaLTStdRoman';
-    src: url('../fonts/helveticaltstd-roman-webfont.eot');
-    src: url('../fonts/helveticaltstd-roman-webfont.eot@#iefix') format('embedded-opentype'),
-         url('../fonts/helveticaltstd-roman-webfont.woff') format('woff'),
-         url('../fonts/helveticaltstd-roman-webfont.ttf') format('truetype'),
-         url('../fonts/helveticaltstd-roman-webfont.svg#') format('svg');
+    src: url('fonts/helveticaltstd-roman-webfont.eot');
+    src: url('fonts/helveticaltstd-roman-webfont.eot@#iefix') format('embedded-opentype'),
+         url('fonts/helveticaltstd-roman-webfont.woff') format('woff'),
+         url('fonts/helveticaltstd-roman-webfont.ttf') format('truetype'),
+         url('fonts/helveticaltstd-roman-webfont.svg#') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -48,10 +48,10 @@
 /*JapanRegular*/
 @font-face {
     font-family: 'JapanRegular';
-    src: url('../fonts/japan-webfont.eot');
-    src: url('../fonts/japan-webfont.eot@#iefix') format('embedded-opentype'),
-         url('../fonts/japan-webfont.woff') format('woff'),
-         url('../fonts/japan-webfont.ttf') format('truetype');
+    src: url('fonts/japan-webfont.eot');
+    src: url('fonts/japan-webfont.eot@#iefix') format('embedded-opentype'),
+         url('fonts/japan-webfont.woff') format('woff'),
+         url('fonts/japan-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
@@ -60,10 +60,10 @@
 /* 彩色字体 */
 @font-face {
     font-family: 'AlexonBoldRegular';
-    src: url('../fonts/alexonbold-webfont.eot');
-    src: url('../fonts/alexonbold-webfont.eot@#iefix') format('embedded-opentype'),
-         url('../fonts/alexonbold-webfont.woff') format('woff'),
-         url('../fonts/alexonbold-webfont.ttf') format('truetype');
+    src: url('fonts/alexonbold-webfont.eot');
+    src: url('fonts/alexonbold-webfont.eot@#iefix') format('embedded-opentype'),
+         url('fonts/alexonbold-webfont.woff') format('woff'),
+         url('fonts/alexonbold-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
@@ -71,21 +71,21 @@
 /*AlexonLightRegular*/
 @font-face {
     font-family: 'AlexonLightRegular';
-    src: url('../fonts/alexonlight-webfont.eot');
-    src: url('../fonts/alexonlight-webfont.eot@#iefix') format('embedded-opentype'),
-         url('../fonts/alexonlight-webfont.woff') format('woff'),
-         url('../fonts/alexonlight-webfont.ttf') format('truetype');
-    font-weight: normal;/*border*/
+    src: url('fonts/alexonlight-webfont.eot');
+    src: url('fonts/alexonlight-webfont.eot@#iefix') format('embedded-opentype'),
+         url('fonts/alexonlight-webfont.woff') format('woff'),
+         url('fonts/alexonlight-webfont.ttf') format('truetype');
+    font-weight: normal;
     font-style: normal;
 
 }
 /*AlexonMediumRegular*/
 @font-face {
     font-family: 'AlexonMediumRegular';
-    src: url('../fonts/alexonmedium-webfont.eot');
-    src: url('../fonts/alexonmedium-webfont.eot@#iefix') format('embedded-opentype'),
-         url('../fonts/alexonmedium-webfont.woff') format('woff'),
-         url('../fonts/alexonmedium-webfont.ttf') format('truetype');
+    src: url('fonts/alexonmedium-webfont.eot');
+    src: url('fonts/alexonmedium-webfont.eot@#iefix') format('embedded-opentype'),
+         url('fonts/alexonmedium-webfont.woff') format('woff'),
+         url('fonts/alexonmedium-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 

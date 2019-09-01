@@ -37,4 +37,15 @@ public class MessageController {
         model.addAttribute("messageList",list);
             return "admin/messageList";
         }
+
+     @RequestMapping("/addMessage")
+     @ResponseBody
+    public String addMessage(Message message){
+            int a=messageService.addMessage(message);
+            if (a>0){
+                return "ok";
+            }else{
+                return "error";
+            }
+     }
 }

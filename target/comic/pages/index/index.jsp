@@ -98,40 +98,7 @@
 
 </head>
 <body class="home">
-<div class="elastic">
-    <!-- 头部 -->
-    <div id="header" class="grid-clear">
-        <div class="grid" id="logo"><a href="index.html" class="settings-text">I❤Man 爱漫吧</a></div>
-        <div class="grid main-menu-block">
-            <ul id="main-menu">
-                <li>
-                    <form class="search">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="搜索漫画">
-                        </div>
-                    </form>
-                </li>
-                <li><a href="index.html" class="settings-txt">首页</a></li>
-                <li><a href="portfolio.html" class="settings-txt">分类</a></li>
-                <li><a href="blog.html" class="settings-txt">最近更新</a></li>
-                <li><a href="services.html" class="settings-txt">连载ing~</a>
-                    <ul>
-                        <li><span class="top_area">&nbsp;</span></li>
-                        <li><a href="columns.html" class="settings-txt">Columns</a></li>
-                        <li><a href="404.html" class="settings-txt">404 Error</a></li>
-                        <li><a href="user.html" class="settings-txt">Home 2</a></li>
-                        <li><a href="#" class="settings-txt">More</a></li>
-                        <li><span class="bottom_area">&nbsp;</span></li>
-                    </ul>
-                </li>
-                <li><a href="about.html" class="settings-txt">说明</a></li>
-                <li><a href="contact.html" class="settings-txt">联系我们</a></li>
-                <li><button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#login">注册/登录</button>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
+<jsp:include page="navigation.jsp"/>
 <div class="htmleaf-container">
     <div class="carousel" data-gap="80">
         <figure>
@@ -286,7 +253,6 @@
                             <li><a href="#" class="inline-border" title="Lf"><img
                                     src="${pageContext.request.contextPath}/images/slider/project_1.jpg" width="90" height="90" alt="" /></a></li>
                         </ul>
-                        </ul>
                     </div>
                     <p class="mytext-title">声明：Imanb爱漫吧为纯属个人学习项目，仅作为学习网站部署搭建学习所用，并不具备版权，广大读者老爷们如果喜欢，且有支付能力，请您一定支持正版。</p>
                     <div class="more-proj">
@@ -301,53 +267,15 @@
                 <!-- HERE START RECENT BLOG -->
                 <div class="threecol">
                     <h1 class="title-line blue"><span class="current-bg pr5 settings-text">更新日志</span></h1>
+                    <c:forEach items="${zhang}" var="chapter" varStatus="i" end="2" begin="0">
                     <div class="blog-entry">
-                        <div class="circle-area circle-inline-border settings-clr no-second">
-                            <div class="date-blog">
-                                <p class="day">11</p>
-                                <p class="month">FEB</p>
-                                <p class="year">2012</p>
-                            </div>
-                        </div>
                         <div class="blog-excerpt">
-                            <h2><a href="#">海贼王第972话：索隆的暴走！！！</a></h2>
-                            <p class="mytext-p2">索隆霸气鬼刀全开，对战大蛇将军，路飞正在赶来路上，他们能否战胜敌人帮助小桃拿回属于他的和之国呢 </p>
-                            <p class="blog-excerpt-bottom"><a href="#" class="comments">113</a><a href="#"
-                                                                                                  class="likes">206</a></p>
+                            <h2><a href="#">${chapter.comicname}第${chapter.cnumber}话：${chapter.cname}</a></h2>
+                            <p class="mytext-p2">更新时间:${chapter.ctime} </p>
                         </div>
                     </div>
                     <span class="dotted-line">&nbsp;</span>
-                    <div class="blog-entry">
-                        <div class="circle-area circle-inline-border settings-clr no-second">
-                            <div class="date-blog">
-                                <p class="day">11</p>
-                                <p class="month">FEB</p>
-                                <p class="year">2012</p>
-                            </div>
-                        </div>
-                        <div class="blog-excerpt">
-                            <h2><a href="#">火影忍者第872话：鸣人VS佐助！！！</a></h2>
-                            <p class="mytext-p2">友谊？羁绊?仇恨? 昔日最好的朋友展开了决斗，鸣人能否唤回佐助把他带回木叶村，还是历史重演，仇恨的战斗又开始了 </p>
-                            <p class="blog-excerpt-bottom"><a href="#" class="comments">113</a><a href="#"
-                                                                                                  class="likes">206</a></p>
-                        </div>
-                    </div>
-                    <span class="dotted-line">&nbsp;</span>
-                    <div class="blog-entry">
-                        <div class="circle-area circle-inline-border settings-clr no-second">
-                            <div class="date-blog">
-                                <p class="day">11</p>
-                                <p class="month">FEB</p>
-                                <p class="year">2012</p>
-                            </div>
-                        </div>
-                        <div class="blog-excerpt">
-                            <h2><a href="#">斗破苍穹第680话：萧炎XO美杜莎</a></h2>
-                            <p class="mytext-p2">大军来袭，陨落心炎彻底爆发，萧炎掉入焚气塔底层，当面列异火的攻击时，美杜莎女王突然苏醒了，在和异火斗争后他们居然。。。。</p>
-                            <p class="blog-excerpt-bottom"><a href="#" class="comments">113</a><a href="#"
-                                                                                                  class="likes">206</a></p>
-                        </div>
-                    </div>
+                    </c:forEach>
                 </div> <!-- end of recent blog -->
             </div>
         </div> <!-- .elastic -->
@@ -426,132 +354,7 @@
                 </div>
             </div> <!-- end of elastic -->
         </div><!-- #footer -->
-        <!-- 模态框 -->
-        <!-- 注册登录模块框 -->
-        <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-             aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title" id="myModalLabel">
-                            <div role="tabpanel">
-                                <!-- Nav tabs -->
-                                <ul class="nav nav-tabs" role="tablist">
-                                    <li role="presentation" class="active">
-                                        <a href="#home" aria-controls="login" role="tab" data-toggle="tab">登录</a>
-                                    </li>
-                                    <li role="presentation">
-                                        <a href="#tab" aria-controls="register" role="tab" data-toggle="tab">注册</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </h4>
-                    </div>
-                    <div class="tab-content">
-                        <div role="tabpanel" class="tab-pane active" id="home">
-                            <div class="modal-body">
-                                <form class="form-horizontal" id="user_form" method="post"
-                                      action="${pageContext.request.contextPath}/login.user">
-                                    <div class="form-group">
-                                        <label for="new_loginName" class="col-sm-2 control-label">账号</label>
-                                        <div class="col-sm-8">
-                                            <input type="text" class="form-control" id="new_loginName" placeholder="账号"
-                                                   name="loginName">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="new_loginPwd" class="col-sm-2 control-label">密码</label>
-                                        <div class="col-sm-8">
-                                            <input type="text" class="form-control" id="new_loginPwd" placeholder="密码"
-                                                   name="loginPwd">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="login_code" class="col-sm-2 control-label">验证码</label>
-                                        <div class="col-sm-4">
-                                            <input type="text" class="form-control" id="login_code" placeholder="验证码"
-                                                   name="code">
-                                            <div class="code" style="float: right">
-                                                <img src="${pageContext.request.contextPath}/images/ia_10281.jpg" />
-                                                <a href="javascript:changeCode()">看不清换一张</a><br>
-                                                <!-- <img src="${pageContext.request.contextPath}/code" onclick="changeCode()" id="checkCodeImg"/>
-												<a href="javascript:changeCode()" >看不清换一张</a><br> -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <input type="submit" value="" id="dologin" style="display: none">
-                                </form>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-                                <button type="button" class="btn btn-primary" id="loginbtn">登录</button>
-                            </div>
-                        </div>
-                        <div role="tabpanel" class="tab-pane" id="tab">
-                            <div class="modal-body">
-                                <form class="form-horizontal" id="register_user_form" method="post"
-                                      action="register.user">
-                                    <div class="form-group">
-                                        <label for="register_loginName" class="col-sm-2 control-label">账号</label>
-                                        <div class="col-sm-8">
-                                            <input type="text" class="form-control" id="register_loginName"
-                                                   placeholder="账号" name="loginName">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="register_loginPwd" class="col-sm-2 control-label">密码</label>
-                                        <div class="col-sm-8">
-                                            <input type="text" class="form-control" id="register_loginPwd"
-                                                   placeholder="密码" name="loginPwd">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="register_gender" class="col-sm-2 control-label">性别</label>
-                                        <div class="col-sm-8">
-                                            <input type="text" class="form-control" id="register_gender"
-                                                   placeholder="性别" name="gender">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="register_email" class="col-sm-2 control-label">Email</label>
-                                        <div class="col-sm-8">
-                                            <input type="text" class="form-control" id="register_email"
-                                                   placeholder="Email" name="email">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="register_telephone" class="col-sm-2 control-label">电话</label>
-                                        <div class="col-sm-8">
-                                            <input type="text" class="form-control" id="register_telephone"
-                                                   placeholder="电话" name="telephone">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="register_QQ" class="col-sm-2 control-label">QQ</label>
-                                        <div class="col-sm-8">
-                                            <input type="text" class="form-control" id="register_QQ" placeholder="QQ账号"
-                                                   name="QQ">
-                                        </div>
-                                    </div>
-                                    <input type="submit" value="" id="doRegister" style="display: none">
-                                </form>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-                                <button type="button" class="btn btn-primary" id="registerBtn">注册</button>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- /.modal-content -->
-            </div><!-- /.modal -->
-        </div>
-        <!-- 注册登录模块框 -->
-        <!-- js 部分 -->
-        <div style="display:none">
-            <script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript'
-                    charset='gb2312'></script>
-        </div>
+
     </div>
 </div>
 </body>

@@ -8,7 +8,7 @@ public class Comic {
     private String comicname;
     private String author;
     private String introduction;
-    private String code;
+    private String ccode;
     private String area;
     private String updatetime;
     private String photopath;
@@ -21,12 +21,12 @@ public class Comic {
     public Comic() {
     }
 
-    public Comic(int id, String comicname, String author, String introduction, String code, String area, String updatetime, String photopath, double score, int heat, List<ComicList> comicLists, int[] clids, String comicListsString) {
+    public Comic(int id, String comicname, String author, String introduction, String ccode, String area, String updatetime, String photopath, double score, int heat, List<ComicList> comicLists, int[] clids, String comicListsString) {
         this.id = id;
         this.comicname = comicname;
         this.author = author;
         this.introduction = introduction;
-        this.code = code;
+        this.ccode = ccode;
         this.area = area;
         this.updatetime = updatetime;
         this.photopath = photopath;
@@ -77,12 +77,12 @@ public class Comic {
         this.introduction = introduction;
     }
 
-    public String getCode() {
-        return code;
+    public String getCcode() {
+        return ccode;
     }
 
-    public void setCode(String code) {
-        this.code = code;
+    public void setCcode(String ccode) {
+        this.ccode = ccode;
     }
 
     public String getArea() {
@@ -148,7 +148,7 @@ public class Comic {
                 ", comicname='" + comicname + '\'' +
                 ", author='" + author + '\'' +
                 ", introduction='" + introduction + '\'' +
-                ", code='" + code + '\'' +
+                ", ccode='" + ccode + '\'' +
                 ", area='" + area + '\'' +
                 ", updatetime='" + updatetime + '\'' +
                 ", photopath='" + photopath + '\'' +
