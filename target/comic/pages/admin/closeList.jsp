@@ -85,9 +85,9 @@
     </tr>
     </thead>
     <tbody>
-    <c:forEach items="${closeList}" var="user" varStatus="i">
+    <c:forEach items="${closeList.list}" var="user" varStatus="i">
         <tr>
-            <td>${i.count}</td>
+            <td>${i.count+(closeList.pageNum-1)*5}</td>
             <td>${user.username }</td>
             <td>${user.loginname}</td>
             <td>${user.password }</td>
@@ -105,11 +105,11 @@
 <div class="col-md-12 text-right">
     <nav>
         <ul class="pagination">
-            <li ><a href="#">首页 </a></li>
-            <li ><a href="#">上一页 </a></li>
-            <li><a href="#">1</a></li>
-            <li ><a href="#">下一页</a></li>
-            <li ><a href="#">尾页</a></li>
+            <li ><a href="${pageContext.request.contextPath}/closeList?pn=1">首页 </a></li>
+            <li ><a href="${pageContext.request.contextPath}/closeList?pn=${closeList.pageNum-1}">上一页 </a></li>
+            <li><a href="#">${closeList.pageNum}</a></li>
+            <li ><a href="${pageContext.request.contextPath}/closeList?pn=${closeList.pageNum+1}">下一页</a></li>
+            <li ><a href="${pageContext.request.contextPath}/closeList?pn=${closeList.pages}">尾页</a></li>
         </ul>
     </nav>
 </div>

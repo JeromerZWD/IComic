@@ -95,8 +95,8 @@
     <div class="space"></div>
     <div class="projects-band-nohidden">
         <ul class="book-item">
-            <c:forEach items="${comicList}" begin="0" end="9" var="comic">
-            <li><a href="#" class="inline-border"><img src="/pic/${comic.photopath}" alt="" width="200"
+            <c:forEach items="${comicList}" var="comic"  begin="0" end="9">
+            <li><a href="${pageContext.request.contextPath}/getDetail?id=${comic.id}" class="inline-border"><img src="/pic/${comic.photopath}" alt="" width="200"
                                                        height="225" /></a>
                 <div class="info">
                     <a href="#" class="description center">

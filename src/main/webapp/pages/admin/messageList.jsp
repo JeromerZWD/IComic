@@ -63,10 +63,10 @@
     </tr>
     </thead>
     <tbody>
-    <c:forEach items="${messageList}" var="message" varStatus="i">
+    <c:forEach items="${messageList.list}" var="message" varStatus="i">
         <tr>
-            <td>${i.count}</td>
-            <td>${message.name }</td>
+            <td>${i.count+(messageList.pageNum-1)*5}</td>
+            <td>${message.mname }</td>
             <td>${message.email}</td>
             <td>${message.message}</td>
             <td><a href="#" class="btn btn-danger btn-xs" onclick="deleteMessage(${message.id})">删除</a></td>
@@ -77,11 +77,11 @@
 <div class="col-md-12 text-right">
     <nav>
         <ul class="pagination">
-            <li ><a href="#">首页 </a></li>
-            <li ><a href="#">上一页 </a></li>
-            <li><a href="#">1</a></li>
-            <li ><a href="#">下一页</a></li>
-            <li ><a href="#">尾页</a></li>
+            <li ><a href="${pageContext.request.contextPath}/messageList?pn=1">首页 </a></li>
+            <li ><a href="${pageContext.request.contextPath}/messageList?pn=${messageList.pageNum-1}">上一页 </a></li>
+            <li><a href="#">${messageList.pageNum}</a></li>
+            <li ><a href="${pageContext.request.contextPath}/messageList?pn=${messageList.pageNum+1}">下一页</a></li>
+            <li ><a href="${pageContext.request.contextPath}/messageList?pn=${messageList.pages}">尾页</a></li>
         </ul>
     </nav>
 </div>

@@ -1,11 +1,14 @@
 package com.controller;
 
 import com.entity.Message;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.service.MessageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.List;
@@ -15,9 +18,11 @@ public class MessageController {
         @Autowired
         private MessageService messageService;
         @RequestMapping("/messageList")
-        public String messageList(Model model){
-        List<Message> list=messageService.getMessages();
-        model.addAttribute("messageList",list);
+        public String messageList(Model model,@RequestParam(value = "pn",defaultValue = "1")Integer pn){
+            PageHelper.startPage(pn,5);
+            List<Message> lists = messageService.getMessages();
+            PageInfo<Message> pageInfo = new PageInfo<>(lists);
+            model.addAttribute("messageList",pageInfo);
         return "admin/messageList";
     }
         @RequestMapping("/deleteMessage")

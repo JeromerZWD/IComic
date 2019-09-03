@@ -59,9 +59,9 @@
     </tr>
     </thead>
     <tbody>
-    <c:forEach items="${list}" var="user" varStatus="i">
+    <c:forEach items="${list.list}" var="user" varStatus="i">
         <tr>
-            <td>${i.count}</td>
+            <td>${i.count+(list.pageNum-1)*5}</td>
             <td>${user.username }</td>
             <td>${user.loginname}</td>
             <td>${user.password }</td>
@@ -79,11 +79,11 @@
 <div class="col-md-12 text-right">
     <nav>
         <ul class="pagination">
-            <li ><a href="#">首页 </a></li>
-            <li ><a href="#">上一页 </a></li>
-            <li><a href="#">1</a></li>
-            <li ><a href="#">下一页</a></li>
-            <li ><a href="#">尾页</a></li>
+            <li ><a href="${pageContext.request.contextPath}/userList?pn=1">首页 </a></li>
+            <li ><a href="${pageContext.request.contextPath}/userList?pn=${list.pageNum-1}">上一页 </a></li>
+            <li><a href="#">${list.pageNum}</a></li>
+            <li ><a href="${pageContext.request.contextPath}/userList?pn=${list.pageNum+1}">下一页</a></li>
+            <li ><a href="${pageContext.request.contextPath}/userList?pn=${list.pages}">尾页</a></li>
         </ul>
     </nav>
 </div>

@@ -7,170 +7,135 @@
   </component>
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/src/main/java/com/service/impl/AdminServiceImpl.java" line="10" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/webapp/pages/index/navigation.jsp" line="231" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f213ba23-4d75-4d5e-b7ce-484741f37db9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/user/bootstrap/bootstrap-overrides.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/user/bootstrap/bootstrap-responsive.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/user/bootstrap/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/user/elements.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/user/font-awesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/user/icons.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/user/layout.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/user/personal-info.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/personal-info.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/index/user/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/index/user/jquery-latest.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/index/user/theme.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/index/about.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/index/contact.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/index/navigation.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/index/personal-info.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/index/personal-info.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/index/personal-info1.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/index/protfolio.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/comic/css/user/bootstrap/bootstrap-overrides.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/comic/css/user/bootstrap/bootstrap-responsive.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/comic/css/user/bootstrap/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/comic/css/user/elements.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/comic/css/user/font-awesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/comic/css/user/icons.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/comic/css/user/layout.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/comic/css/user/personal-info.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/comic/images/personal-info.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/comic/js/index/user/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/comic/js/index/user/jquery-latest.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/comic/js/index/user/theme.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/comic/pages/index/about.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/comic/pages/index/contact.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/comic/pages/index/navigation.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/comic/pages/index/personal-info.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/comic/pages/index/personal-info.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/comic/pages/index/personal-info1.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/comic/pages/index/protfolio.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/index/blog.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/index/detail.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/index/select.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/index/single-blog.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/AdminController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/ComicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/ComicController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/CommentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/MessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/MessageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/entity/Chapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/entity/Chapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/entity/Comic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/entity/Comic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/entity/ComicList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/entity/ComicList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/entity/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/entity/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/entity/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/entity/Comment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mapper/ComicMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mapper/ComicMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mapper/MessageMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mapper/MessageMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mapper/CommentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mapper/CommentMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/service/ComicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/service/ComicService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/service/MessageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/service/MessageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/service/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/service/CommentService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/service/impl/ComicServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/service/impl/ComicServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/service/impl/MessageServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/service/impl/MessageServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/service/impl/CommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/service/impl/CommentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resource/mapper/ComicMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/mapper/ComicMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resource/mapper/MessageMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/mapper/MessageMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resource/mapper/CommentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/mapper/CommentMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resource/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resource/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/css/mycss.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/mycss.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/reset.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/fonts/alexonbold-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/fonts/alexonbold-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/fonts/alexonlight-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/fonts/alexonlight-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/fonts/alexonmedium-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/fonts/alexonmedium-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/fonts/helveticaltstd-bold-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/fonts/helveticaltstd-bold-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/fonts/helveticaltstd-bold-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/fonts/helveticaltstd-light-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/fonts/helveticaltstd-light-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/fonts/helveticaltstd-light-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/fonts/helveticaltstd-roman-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/fonts/helveticaltstd-roman-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/fonts/helveticaltstd-roman-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/fonts/japan-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/fonts/japan-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/admin/chapterList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/admin/chapterList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/admin/closeList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/admin/closeList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/admin/comicList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/admin/comicList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/admin/commentList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/admin/commentList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/admin/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/admin/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/admin/messageList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/admin/messageList.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/admin/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/admin/user.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/index/404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/index/404.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/index/404.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/index/about.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/index/contact.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/index/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/index/blog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/index/detail.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/index/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/index/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/index/navigation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/index/navigation.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/index/personal-info.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/index/protfolio.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/index/protfolio.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controller/AdminController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/controller/ComicController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controller/ComicController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/controller/CommentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controller/CommentController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/controller/MessageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controller/MessageController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/entity/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/entity/Admin.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/entity/Chapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/entity/Chapter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/entity/Comic.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/entity/Comic.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/entity/ComicList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/entity/ComicList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/entity/Comment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/entity/Comment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/entity/HaveList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/entity/HaveList.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/entity/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/entity/Message.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/entity/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mapper/AdminMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mapper/AdminMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/mapper/ComicMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mapper/ComicMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mapper/CommentMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mapper/CommentMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/mapper/MessageMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mapper/MessageMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mapper/UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/service/AdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/service/AdminService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/service/ComicService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/service/ComicService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/service/CommentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/service/CommentService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/service/MessageService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/service/MessageService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/service/impl/AdminServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/service/impl/AdminServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/service/impl/ComicServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/service/impl/ComicServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/service/impl/CommentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/service/impl/CommentServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/service/impl/MessageServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/service/impl/MessageServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/mapper/ComicMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/ComicMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/MessageMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/MessageMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/CommentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/CommentMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/UserMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/comic.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/comic.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/comic/WEB-INF/classes/com/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/comic/WEB-INF/classes/com/controller/AdminController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/comic/WEB-INF/classes/com/controller/ComicController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/comic/WEB-INF/classes/com/controller/ComicController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/comic/WEB-INF/classes/com/controller/CommentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/comic/WEB-INF/classes/com/controller/CommentController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/comic/WEB-INF/classes/com/controller/MessageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/comic/WEB-INF/classes/com/controller/MessageController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/comic/WEB-INF/classes/com/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/comic/WEB-INF/classes/com/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/comic/WEB-INF/classes/com/entity/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/comic/WEB-INF/classes/com/entity/Admin.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/comic/WEB-INF/classes/com/entity/Chapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/comic/WEB-INF/classes/com/entity/Chapter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/comic/WEB-INF/classes/com/entity/Comic.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/comic/WEB-INF/classes/com/entity/Comic.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/comic/WEB-INF/classes/com/entity/ComicList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/comic/WEB-INF/classes/com/entity/ComicList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/comic/WEB-INF/classes/com/entity/Comment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/comic/WEB-INF/classes/com/entity/Comment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/comic/WEB-INF/classes/com/entity/HaveList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/comic/WEB-INF/classes/com/entity/HaveList.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/comic/WEB-INF/classes/com/entity/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/comic/WEB-INF/classes/com/entity/Message.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/comic/WEB-INF/classes/com/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/comic/WEB-INF/classes/com/entity/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/comic/WEB-INF/classes/com/mapper/AdminMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/comic/WEB-INF/classes/com/mapper/AdminMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/comic/WEB-INF/classes/com/mapper/ComicMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/comic/WEB-INF/classes/com/mapper/ComicMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/comic/WEB-INF/classes/com/mapper/CommentMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/comic/WEB-INF/classes/com/mapper/CommentMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/comic/WEB-INF/classes/com/mapper/MessageMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/comic/WEB-INF/classes/com/mapper/MessageMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/comic/WEB-INF/classes/com/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/comic/WEB-INF/classes/com/mapper/UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/comic/WEB-INF/classes/com/service/AdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/comic/WEB-INF/classes/com/service/AdminService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/comic/WEB-INF/classes/com/service/ComicService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/comic/WEB-INF/classes/com/service/ComicService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/comic/WEB-INF/classes/com/service/CommentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/comic/WEB-INF/classes/com/service/CommentService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/comic/WEB-INF/classes/com/service/MessageService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/comic/WEB-INF/classes/com/service/MessageService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/comic/WEB-INF/classes/com/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/comic/WEB-INF/classes/com/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/comic/WEB-INF/classes/com/service/impl/AdminServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/comic/WEB-INF/classes/com/service/impl/AdminServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/comic/WEB-INF/classes/com/service/impl/ComicServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/comic/WEB-INF/classes/com/service/impl/ComicServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/comic/WEB-INF/classes/com/service/impl/CommentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/comic/WEB-INF/classes/com/service/impl/CommentServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/comic/WEB-INF/classes/com/service/impl/MessageServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/comic/WEB-INF/classes/com/service/impl/MessageServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/comic/WEB-INF/classes/com/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/comic/WEB-INF/classes/com/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/comic/WEB-INF/classes/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/comic/WEB-INF/classes/config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/comic/WEB-INF/classes/mapper/ComicMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/comic/WEB-INF/classes/mapper/ComicMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/comic/WEB-INF/classes/mapper/MessageMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/comic/WEB-INF/classes/mapper/MessageMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/comic/WEB-INF/classes/mapper/CommentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/comic/WEB-INF/classes/mapper/CommentMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/comic/WEB-INF/classes/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/comic/WEB-INF/classes/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/comic/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/comic/css/bootstrap.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/comic/css/mycss.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/comic/css/mycss.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/comic/css/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/comic/css/reset.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/comic/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/comic/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/comic/fonts/alexonbold-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/comic/fonts/alexonbold-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/comic/fonts/alexonlight-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/comic/fonts/alexonlight-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/comic/fonts/alexonmedium-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/comic/fonts/alexonmedium-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/comic/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/comic/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/comic/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/comic/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/comic/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/comic/fonts/helveticaltstd-bold-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/comic/fonts/helveticaltstd-bold-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/comic/fonts/helveticaltstd-bold-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/comic/fonts/helveticaltstd-light-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/comic/fonts/helveticaltstd-light-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/comic/fonts/helveticaltstd-light-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/comic/fonts/helveticaltstd-roman-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/comic/fonts/helveticaltstd-roman-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/comic/fonts/helveticaltstd-roman-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/comic/fonts/japan-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/comic/fonts/japan-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/comic/pages/admin/chapterList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/comic/pages/admin/chapterList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/comic/pages/admin/closeList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/comic/pages/admin/closeList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/comic/pages/admin/comicList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/comic/pages/admin/comicList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/comic/pages/admin/commentList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/comic/pages/admin/commentList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/comic/pages/admin/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/comic/pages/admin/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/comic/pages/admin/messageList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/comic/pages/admin/messageList.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/comic/pages/admin/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/comic/pages/admin/user.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/comic/pages/index/404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/comic/pages/index/404.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/comic/pages/index/404.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/comic/pages/index/about.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/comic/pages/index/contact.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/comic/pages/index/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/comic/pages/index/blog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/comic/pages/index/detail.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/comic/pages/index/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/comic/pages/index/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/comic/pages/index/navigation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/comic/pages/index/navigation.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/comic/pages/index/personal-info.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/comic/pages/index/protfolio.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/comic/pages/index/protfolio.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -200,72 +165,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/index/personal-info.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/controller/ComicController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="48" column="51" lean-forward="true" selection-start-line="48" selection-start-column="51" selection-end-line="48" selection-end-column="51" />
+            <state relative-caret-position="1208">
+              <caret line="268" column="48" selection-start-line="268" selection-start-column="48" selection-end-line="268" selection-end-column="48" />
               <folding>
-                <element signature="e#1728#1964#0#HTML" />
-                <element signature="n#style#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="method#addComic#0;class#ComicController#0" />
+                <element signature="method#addChapter#0;class#ComicController#0" />
+                <element signature="method#deleteChapterById#0;class#ComicController#0" />
+                <element signature="method#getComicByTypeId#0;class#ComicController#0" />
+                <element signature="method#getComicSByOther#0;class#ComicController#0" />
+                <element signature="method#deleteComicById#0;class#ComicController#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/css/user/personal-info.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="95" selection-start-line="95" selection-end-line="95" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/index/personal-info1.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1467">
-              <caret line="54" column="13" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
-              <folding>
-                <element signature="e#1764#2398#0#HTML" />
-                <element signature="e#2422#2535#0#HTML" />
-                <element signature="n#style#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#form#1;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/index/navigation.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="114" column="31" selection-start-line="114" selection-start-column="31" selection-end-line="114" selection-end-column="31" />
-              <folding>
-                <element signature="n#script#5;n#head#0;n#html#0;n#!!top" />
-                <element signature="e#5982#6251#0#JSP" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#a#0;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/index/about.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="479">
-              <caret line="206" column="36" selection-start-line="206" selection-start-column="36" selection-end-line="206" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/index/contact.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="157" lean-forward="true" selection-start-line="157" selection-end-line="157" />
             </state>
           </provider>
         </entry>
@@ -273,19 +185,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="71" column="38" selection-start-line="71" selection-start-column="34" selection-end-line="71" selection-end-column="38" />
+            <state relative-caret-position="242">
+              <caret line="193" column="56" lean-forward="true" selection-start-line="191" selection-start-column="8" selection-end-line="193" selection-end-column="56" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="method#userList#0;class#UserController#0" />
                 <element signature="method#saveUser#0;class#UserController#0" />
-                <element signature="e#2495#2496#0" expanded="true" />
-                <element signature="e#2543#2544#0" expanded="true" />
+                <element signature="method#addUser#0;class#UserController#0" />
+                <element signature="method#adminLogin#0;class#UserController#0" />
                 <element signature="method#deleteUser#0;class#UserController#0" />
+                <element signature="method#updateUser#0;class#UserController#0" />
+                <element signature="method#updatePath#0;class#UserController#0" />
                 <element signature="method#updatePwd#0;class#UserController#0" />
-                <element signature="method#getUserByOther#0;class#UserController#0" />
                 <element signature="method#closeUser#0;class#UserController#0" />
                 <element signature="method#closeList#0;class#UserController#0" />
-                <element signature="method#getCloseUserByLoginName#0;class#UserController#0" />
                 <element signature="method#openUser#0;class#UserController#0" />
               </folding>
             </state>
@@ -293,19 +206,73 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resource/mapper/UserMapper.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/entity/Comic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="78" column="37" lean-forward="true" selection-start-line="78" selection-start-column="37" selection-end-line="78" selection-end-column="37" />
+            <state relative-caret-position="245">
+              <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/index/index.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/admin/chapterList.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="665">
-              <caret line="19" column="99" selection-start-line="19" selection-start-column="99" selection-end-line="19" selection-end-column="99" />
+            <state relative-caret-position="490">
+              <caret line="62" column="107" lean-forward="true" selection-start-line="62" selection-start-column="107" selection-end-line="62" selection-end-column="107" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resource/mapper/ComicMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="742">
+              <caret line="112" column="9" lean-forward="true" selection-start-line="112" selection-start-column="9" selection-end-line="112" selection-end-column="9" />
+              <folding>
+                <element signature="n#resultMap#1;n#mapper#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/index/protfolio.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="245">
+              <caret line="100" column="34" lean-forward="true" selection-start-line="100" selection-start-column="34" selection-end-line="100" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/index/navigation.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="225" column="59" lean-forward="true" selection-start-line="225" selection-start-column="59" selection-end-line="225" selection-end-column="59" />
+              <folding>
+                <element signature="n#style#0;n#select#0;n#div#0;n#div#3;n#form#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/index/detail.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="91" column="118" selection-start-line="91" selection-start-column="118" selection-end-line="91" selection-end-column="118" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/admin/comicList.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1810">
+              <caret line="81" column="71" selection-start-line="81" selection-start-column="60" selection-end-line="81" selection-end-column="71" />
             </state>
           </provider>
         </entry>
@@ -327,6 +294,7 @@
     <findStrings>
       <find>comictype</find>
       <find>name</find>
+      <find>search</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -338,56 +306,56 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resource/applicationContext-dao.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/pages/admin/add.html" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/resource/springmvc.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/entity/HaveList.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/pages/admin/comicList.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/pages/admin/chapterList.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/pages/admin/addChapter.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/pages/admin/home.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/pages/admin/addComic.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/index/my.js" />
-        <option value="$PROJECT_DIR$/target/comic/js/index/functions.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/index/functions.js" />
-        <option value="$PROJECT_DIR$/target/comic/css/style.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/pages/index/index1.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/reset.css" />
-        <option value="$PROJECT_DIR$/src/main/java/com/entity/Chapter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/service/ComicService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/entity/Comic.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mapper/MessageMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/service/MessageService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/service/impl/MessageServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/resource/mapper/MessageMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/entity/Message.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/controller/MessageController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/pages/index/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/pages/index/about.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/pages/index/404.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/pages/index/protfolio.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/util/util.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/entity/ComicList.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mapper/ComicMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/service/impl/ComicServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/resource/mapper/ComicMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/pages/admin/user.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/controller/ComicController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mapper/UserMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/mycss.css" />
         <option value="$PROJECT_DIR$/target/comic/pages/index/personal-info.jsp" />
         <option value="$PROJECT_DIR$/target/comic/css/user/elements.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/user/elements.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/user/personal-info.css" />
-        <option value="$PROJECT_DIR$/src/main/java/com/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/pages/index/personal-info1.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/pages/index/personal-info.jsp" />
-        <option value="$PROJECT_DIR$/src/main/resource/mapper/UserMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/style.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/pages/index/contact.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mapper/CommentMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/service/CommentService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/service/impl/CommentServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resource/mapper/MessageMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/bootstrap.css" />
+        <option value="$PROJECT_DIR$/target/comic/css/bootstrap.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/style.css" />
+        <option value="$PROJECT_DIR$/src/main/java/com/entity/Chapter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/entity/Comment.java" />
+        <option value="$PROJECT_DIR$/src/main/resource/mapper/CommentMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/pages/index/single-blog.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/pages/index/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/pages/index/blog.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/mycss.css" />
+        <option value="$PROJECT_DIR$/src/main/java/com/controller/AdminController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/pages/admin/home.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mapper/ComicMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/service/ComicService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/service/impl/ComicServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/pages/index/select.jsp" />
+        <option value="$PROJECT_DIR$/src/main/resource/config.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/pages/admin/user.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/pages/admin/closeList.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/pages/admin/comicList.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/controller/MessageController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/pages/admin/messageList.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/controller/CommentController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/pages/admin/commentList.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/resource/mapper/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/pages/index/personal-info.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/pages/admin/chapterList.jsp" />
+        <option value="$PROJECT_DIR$/src/main/resource/mapper/ComicMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/pages/index/detail.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/controller/ComicController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/pages/index/protfolio.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/pages/index/navigation.jsp" />
       </list>
     </option>
@@ -423,9 +391,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-11" />
+    <option name="x" value="158" />
+    <option name="y" value="88" />
     <option name="width" value="1550" />
-    <option name="height" value="1057" />
+    <option name="height" value="935" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -491,34 +460,6 @@
               <item name="comic" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="comic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="comic" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="comic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="comic" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="comic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="comic" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resource" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -550,6 +491,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="comic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="comic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -572,7 +521,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/css/fonts" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -587,17 +536,17 @@
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\17270\MavenProjects\comic\src\main\webapp\images" />
-      <recent name="C:\Users\17270\MavenProjects\comic\src\main\webapp\js\index\user" />
-      <recent name="C:\Users\17270\MavenProjects\comic\src\main\webapp\css\user" />
-      <recent name="C:\Users\17270\MavenProjects\comic\src\main\webapp\pages\index" />
-      <recent name="C:\Users\17270\MavenProjects\comic\src\main\webapp\css" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\17270\MavenProjects\comic\src\main\webapp\js\index" />
       <recent name="C:\Users\17270\MavenProjects\comic\src\main\webapp\images\comicphotopath" />
       <recent name="C:\Users\17270\MavenProjects\comic\src\main\webapp\pages" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\17270\MavenProjects\comic\src\main\webapp\css\fonts" />
+      <recent name="C:\Users\17270\MavenProjects\comic\src\main\webapp\images" />
+      <recent name="C:\Users\17270\MavenProjects\comic\src\main\webapp\js\index\user" />
+      <recent name="C:\Users\17270\MavenProjects\comic\src\main\webapp\css\user" />
+      <recent name="C:\Users\17270\MavenProjects\comic\src\main\webapp\pages\index" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -784,7 +733,8 @@
       <workItem from="1567038914955" duration="14813000" />
       <workItem from="1567077454716" duration="28687000" />
       <workItem from="1567233262611" duration="10011000" />
-      <workItem from="1567335265567" duration="10655000" />
+      <workItem from="1567335265567" duration="63079000" />
+      <workItem from="1567509154852" duration="7811000" />
     </task>
     <task id="LOCAL-00001" summary="zwd">
       <created>1566463998831</created>
@@ -835,11 +785,18 @@
       <option name="project" value="LOCAL" />
       <updated>1566954461903</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="完成 登录 注册 修改基本信息 修改密码 功能">
+      <created>1567351281726</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1567351281727</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="264170000" />
+    <option name="totallyTimeSpent" value="324405000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -853,7 +810,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15991472" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19296375" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -863,8 +820,8 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32832617" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.03218884" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39806867" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34334764" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.5107296" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32939914" />
@@ -943,304 +900,389 @@
     <MESSAGE value="完成了添加漫画功能" />
     <MESSAGE value="完成了添加章节功能" />
     <MESSAGE value="完成了首页的数据展示" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成了首页的数据展示" />
+    <MESSAGE value="完成 登录 注册 修改基本信息 修改密码 功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成 登录 注册 修改基本信息 修改密码 功能" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/index/portfolio.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="76" column="10" lean-forward="true" selection-end-line="454" selection-end-column="7" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/fonts/glyphicons-halflings-regular.ttf">
+      <provider selected="true" editor-type-id="fontseditor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/service/ComicService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="20" column="48" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/index/contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="334" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/entity/Message.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="56" column="48" lean-forward="true" selection-start-line="56" selection-start-column="48" selection-end-line="56" selection-end-column="48" />
-          <folding>
-            <element signature="e#506#507#0" expanded="true" />
-            <element signature="e#534#535#0" expanded="true" />
-            <element signature="e#576#577#0" expanded="true" />
-            <element signature="e#610#611#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resource/mapper/MessageMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="18" column="77" lean-forward="true" selection-start-line="18" selection-start-column="77" selection-end-line="18" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/controller/MessageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="46" column="18" lean-forward="true" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/slider/slider_1.jpg">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/fonts/glyphicons-halflings-regular.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/slider/project_1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/slider/8.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/slider/slider_7.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/index/about.html">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/admin/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="375" selection-end-column="7" />
-        </state>
+        <state relative-caret-position="-9926" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mapper/MessageMapper.java">
+    <entry file="file://$PROJECT_DIR$/target/comic/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="16" selection-end-column="36" />
-        </state>
+        <state relative-caret-position="-5880" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/service/MessageService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/util/util.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/service/impl/ComicServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getComicSByOther#0;class#ComicServiceImpl#0" />
-            <element signature="method#getComicById#0;class#ComicServiceImpl#0" />
-            <element signature="method#addComic#0;class#ComicServiceImpl#0" />
-            <element signature="method#getComicByTypeId#0;class#ComicServiceImpl#0" />
-            <element signature="method#getComicList#0;class#ComicServiceImpl#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resource/mapper/ComicMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1540">
-          <caret line="44" column="8" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/entity/HaveList.java">
+    <entry file="file://$PROJECT_DIR$/target/comic/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="245">
-          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+          <caret line="265" column="12" selection-start-line="265" selection-start-column="12" selection-end-line="265" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/entity/ComicList.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="22" />
+        <state relative-caret-position="1260">
+          <caret line="264" selection-start-line="264" selection-end-line="264" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-346">
+          <caret line="273" column="21" selection-start-line="273" selection-start-column="21" selection-end-line="273" selection-end-column="21" />
           <folding>
-            <element signature="e#630#631#0" expanded="true" />
-            <element signature="e#658#659#0" expanded="true" />
-            <element signature="e#699#700#0" expanded="true" />
-            <element signature="e#733#734#0" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/service/impl/MessageServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/target/comic/pages/index/blog.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="36" column="49" selection-start-line="36" selection-start-column="49" selection-end-line="36" selection-end-column="49" />
+        <state relative-caret-position="1960">
+          <caret line="56" column="17" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/com/entity/Chapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="87" column="16" selection-start-line="87" selection-start-column="11" selection-end-line="87" selection-end-column="16" />
           <folding>
-            <element signature="e#884#885#0" expanded="true" />
-            <element signature="e#940#941#0" expanded="true" />
+            <element signature="e#0#2230#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/user/bootstrap/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/user/font-awesome.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/index/user/bootstrap.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mapper/ComicMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="738">
-          <caret line="40" column="14" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
+        <state relative-caret-position="452">
+          <caret line="446" column="93" selection-start-line="446" selection-start-column="93" selection-end-line="446" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/index/detail.html" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/entity/Comment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="70" column="18" selection-start-line="70" selection-start-column="18" selection-end-line="70" selection-end-column="18" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#996#997#0" expanded="true" />
+            <element signature="e#1024#1025#0" expanded="true" />
+            <element signature="e#1066#1067#0" expanded="true" />
+            <element signature="e#1100#1101#0" expanded="true" />
+            <element signature="e#1189#1190#0" expanded="true" />
+            <element signature="e#1216#1217#0" expanded="true" />
+            <element signature="e#1254#1255#0" expanded="true" />
+            <element signature="e#1286#1287#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/index/protfolio.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/index/personal-info.html" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/index/about.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9">
-          <caret line="58" column="105" lean-forward="true" selection-start-line="58" selection-start-column="105" selection-end-line="58" selection-end-column="105" />
+        <state relative-caret-position="-6185">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/admin/user.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/resource/mapper/CommentMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="980">
-          <caret line="169" column="58" selection-start-line="169" selection-start-column="51" selection-end-line="169" selection-end-column="58" />
+        <state relative-caret-position="525">
+          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/service/impl/AdminServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/index/columns.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7140" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/index/single-blog.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/entity/Comic.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mapper/AdminMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="28" column="27" lean-forward="true" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+        <state relative-caret-position="140">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/index/single-blog.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="47" column="36" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#4365#4371#1#HTML" expanded="true" />
+            <element signature="e#5875#5881#1#HTML" expanded="true" />
+            <element signature="n#style#0;n#form#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#9634#9640#1#HTML" expanded="true" />
+            <element signature="e#9709#9715#1#HTML" expanded="true" />
+            <element signature="e#9783#9789#1#HTML" expanded="true" />
+            <element signature="e#9859#9865#1#HTML" expanded="true" />
+            <element signature="e#9935#9941#1#HTML" expanded="true" />
+            <element signature="e#10094#10100#0#HTML" expanded="true" />
+            <element signature="e#10111#10117#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/service/impl/UserServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/index/blog.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="75" column="26" selection-start-line="75" selection-start-column="16" selection-end-line="75" selection-end-column="26" />
+        <state>
+          <caret line="108" column="47" lean-forward="true" selection-start-line="108" selection-start-column="47" selection-end-line="108" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/index/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="218" column="115" selection-start-line="218" selection-start-column="56" selection-end-line="218" selection-end-column="115" />
           <folding>
-            <element signature="e#1572#1573#0" expanded="true" />
-            <element signature="e#1606#1607#0" expanded="true" />
-            <element signature="e#1676#1677#0" expanded="true" />
-            <element signature="e#1726#1727#0" expanded="true" />
+            <element signature="n#script#5;n#head#0;n#html#0;n#!!top" />
+            <element signature="e#1919#2110#0#HTML" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mapper/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="32" column="31" lean-forward="true" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="32" column="31" lean-forward="true" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/controller/AdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-          <folding>
-            <element signature="method#adminLogin#0;class#AdminController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/4.0.1/javax.servlet-api-4.0.1.jar!/javax/servlet/http/HttpSession.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="51" column="14" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/index/personal-info.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="10" column="28" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/css/mycss.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2345">
-          <caret line="67" column="14" selection-start-line="67" selection-start-column="14" selection-end-line="67" selection-end-column="14" />
+        <state relative-caret-position="147">
+          <caret line="594" column="18" selection-start-line="594" selection-start-column="18" selection-end-line="594" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/comic/pages/index/personal-info.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/controller/AdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="49" column="37" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/admin/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="93" column="38" selection-start-line="93" selection-start-column="38" selection-end-line="93" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mapper/ComicMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="48" column="3" selection-start-line="48" selection-start-column="3" selection-end-line="49" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/github/pagehelper/pagehelper/5.1.9/pagehelper-5.1.9.jar!/com/github/pagehelper/ISelect.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resource/springmvc.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resource/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="536">
+          <caret line="27" column="59" lean-forward="true" selection-start-line="27" selection-start-column="59" selection-end-line="27" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/index/select.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="738">
+          <caret line="52" column="41" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/service/impl/ComicServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2477">
+          <caret line="177" column="57" selection-start-line="177" selection-start-column="57" selection-end-line="177" selection-end-column="57" />
+          <folding>
+            <element signature="e#4852#4853#0" expanded="true" />
+            <element signature="e#4876#4877#0" expanded="true" />
+            <element signature="e#4974#4975#0" expanded="true" />
+            <element signature="e#5001#5002#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/admin/closeList.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
-          <caret line="82" column="104" lean-forward="true" selection-start-line="82" selection-start-column="104" selection-end-line="82" selection-end-column="104" />
+          <caret line="91" column="38" lean-forward="true" selection-start-line="91" selection-start-column="38" selection-end-line="91" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/comic/css/user/elements.css">
+    <entry file="file://$PROJECT_DIR$/src/main/resource/mapper/UserMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="408" column="28" lean-forward="true" selection-start-line="408" selection-start-column="28" selection-end-line="408" selection-end-column="28" />
+        <state relative-caret-position="490">
+          <caret line="86" column="65" lean-forward="true" selection-start-line="86" selection-start-column="65" selection-end-line="86" selection-end-column="65" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/user/elements.css">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/service/ComicService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14280">
-          <caret line="408" column="13" selection-start-line="408" selection-start-column="13" selection-end-line="408" selection-end-column="13" />
+        <state relative-caret-position="436">
+          <caret line="44" column="53" selection-start-line="44" selection-start-column="53" selection-end-line="44" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/controller/MessageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="19" column="37" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/controller/CommentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="24" column="18" lean-forward="true" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/admin/commentList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="87" column="109" lean-forward="true" selection-start-line="83" selection-start-column="10" selection-end-line="87" selection-end-column="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/admin/messageList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="67" column="51" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/index/personal-info.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="40" column="13" lean-forward="true" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/entity/Chapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="23" />
+          <folding>
+            <element signature="method#Chapter#1;class#Chapter#0" />
+            <element signature="e#1638#1639#0" expanded="true" />
+            <element signature="e#1681#1682#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/admin/comicList.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4165">
-          <caret line="119" column="17" selection-start-line="113" selection-start-column="16" selection-end-line="119" selection-end-column="17" />
+        <state relative-caret-position="1810">
+          <caret line="81" column="71" selection-start-line="81" selection-start-column="60" selection-end-line="81" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/admin/user.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="84" column="69" selection-start-line="84" selection-start-column="69" selection-end-line="84" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/entity/Comic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/admin/chapterList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="62" column="107" lean-forward="true" selection-start-line="62" selection-start-column="107" selection-end-line="62" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="193" column="56" lean-forward="true" selection-start-line="191" selection-start-column="8" selection-end-line="193" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#userList#0;class#UserController#0" />
+            <element signature="method#saveUser#0;class#UserController#0" />
+            <element signature="method#addUser#0;class#UserController#0" />
+            <element signature="method#adminLogin#0;class#UserController#0" />
+            <element signature="method#deleteUser#0;class#UserController#0" />
+            <element signature="method#updateUser#0;class#UserController#0" />
+            <element signature="method#updatePath#0;class#UserController#0" />
+            <element signature="method#updatePwd#0;class#UserController#0" />
+            <element signature="method#closeUser#0;class#UserController#0" />
+            <element signature="method#closeList#0;class#UserController#0" />
+            <element signature="method#openUser#0;class#UserController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/index/detail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="91" column="118" selection-start-line="91" selection-start-column="118" selection-end-line="91" selection-end-column="118" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resource/mapper/ComicMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="742">
+          <caret line="112" column="9" lean-forward="true" selection-start-line="112" selection-start-column="9" selection-end-line="112" selection-end-column="9" />
+          <folding>
+            <element signature="n#resultMap#1;n#mapper#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/controller/ComicController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="46" column="15" selection-start-line="46" selection-start-column="15" selection-end-line="46" selection-end-column="15" />
+        <state relative-caret-position="1208">
+          <caret line="268" column="48" selection-start-line="268" selection-start-column="48" selection-end-line="268" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#chapterList#0;class#ComicController#0" />
+            <element signature="method#addComic#0;class#ComicController#0" />
             <element signature="method#addChapter#0;class#ComicController#0" />
             <element signature="method#deleteChapterById#0;class#ComicController#0" />
-            <element signature="method#getChapterByNumber#0;class#ComicController#0" />
             <element signature="method#getComicByTypeId#0;class#ComicController#0" />
             <element signature="method#getComicSByOther#0;class#ComicController#0" />
             <element signature="method#deleteComicById#0;class#ComicController#0" />
@@ -1248,110 +1290,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resource/mapper/UserMapper.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/index/protfolio.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="78" column="37" lean-forward="true" selection-start-line="78" selection-start-column="37" selection-end-line="78" selection-end-column="37" />
+        <state relative-caret-position="245">
+          <caret line="100" column="34" lean-forward="true" selection-start-line="100" selection-start-column="34" selection-end-line="100" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/index/personal-info.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/lunbo/normalize.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="48" column="51" lean-forward="true" selection-start-line="48" selection-start-column="51" selection-end-line="48" selection-end-column="51" />
-          <folding>
-            <element signature="e#1728#1964#0#HTML" />
-            <element signature="n#style#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/user/personal-info.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="95" selection-start-line="95" selection-end-line="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/index/personal-info1.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1467">
-          <caret line="54" column="13" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
-          <folding>
-            <element signature="e#1764#2398#0#HTML" />
-            <element signature="e#2422#2535#0#HTML" />
-            <element signature="n#style#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#form#1;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/index/404.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="28" column="36" lean-forward="true" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/index/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="19" column="99" selection-start-line="19" selection-start-column="99" selection-end-line="19" selection-end-column="99" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="71" column="38" selection-start-line="71" selection-start-column="34" selection-end-line="71" selection-end-column="38" />
-          <folding>
-            <element signature="method#userList#0;class#UserController#0" />
-            <element signature="method#saveUser#0;class#UserController#0" />
-            <element signature="e#2495#2496#0" expanded="true" />
-            <element signature="e#2543#2544#0" expanded="true" />
-            <element signature="method#deleteUser#0;class#UserController#0" />
-            <element signature="method#updatePwd#0;class#UserController#0" />
-            <element signature="method#getUserByOther#0;class#UserController#0" />
-            <element signature="method#closeUser#0;class#UserController#0" />
-            <element signature="method#closeList#0;class#UserController#0" />
-            <element signature="method#getCloseUserByLoginName#0;class#UserController#0" />
-            <element signature="method#openUser#0;class#UserController#0" />
-          </folding>
+        <state>
+          <caret column="1419" selection-start-column="1419" selection-end-column="1419" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/index/navigation.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="114" column="31" selection-start-line="114" selection-start-column="31" selection-end-line="114" selection-end-column="31" />
+        <state relative-caret-position="132">
+          <caret line="225" column="59" lean-forward="true" selection-start-line="225" selection-start-column="59" selection-end-line="225" selection-end-column="59" />
           <folding>
-            <element signature="n#script#5;n#head#0;n#html#0;n#!!top" />
-            <element signature="e#5982#6251#0#JSP" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#a#0;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#0;n#div#0;n#div#3;n#form#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="323" column="134" lean-forward="true" selection-start-line="323" selection-start-column="134" selection-end-line="323" selection-end-column="134" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/index/contact.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="157" lean-forward="true" selection-start-line="157" selection-end-line="157" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/index/about.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="206" column="36" selection-start-line="206" selection-start-column="36" selection-end-line="206" selection-end-column="36" />
         </state>
       </provider>
     </entry>

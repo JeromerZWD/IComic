@@ -2,12 +2,16 @@ package com.controller;
 
 import com.entity.Comic;
 import com.entity.User;
+import com.github.pagehelper.Page;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -31,9 +35,11 @@ public class UserController {
      * @return
      */
     @RequestMapping("/userList")
-    public String userList(Model model){
-        List<User> list=userService.getUsers();
-        model.addAttribute("list",list);
+    public String userList(Model model,@RequestParam(value = "pn",defaultValue = "1")Integer pn){
+        PageHelper.startPage(pn,5);
+        List<User> lists = userService.getUsers();
+        PageInfo<User> pageInfo = new PageInfo<>(lists);
+        model.addAttribute("list",pageInfo);
         return "admin/user";
 
     }
@@ -182,11 +188,11 @@ public class UserController {
      * @return
      */
     @RequestMapping("/getUserByOther")
-    public String getUserByOther(User user,Model model){
-        System.out.println(user);
-        List<User> user1=userService.getUserByOther(user);
-        System.out.println(user1.size());
-        model.addAttribute("list",user1);
+    public String getUserByOther(User user,Model model,@RequestParam(value = "pn",defaultValue = "1")Integer pn){
+        PageHelper.startPage(pn,5);
+        List<User> lists = userService.getUserByOther(user);
+        PageInfo<User> pageInfo = new PageInfo<>(lists);
+        model.addAttribute("list",pageInfo);
         return "admin/user";
     }
 
@@ -213,9 +219,11 @@ public class UserController {
      * @return
      */
     @RequestMapping("/closeList")
-    public String closeList(Model model){
-        List<User> users=userService.getCloseUsers();
-        model.addAttribute("closeList",users);
+    public String closeList(Model model,@RequestParam(value = "pn",defaultValue = "1")Integer pn){
+        PageHelper.startPage(pn,5);
+        List<User> users = userService.getCloseUsers();
+        PageInfo<User> pageInfo = new PageInfo<>(users);
+        model.addAttribute("closeList",pageInfo);
         return "admin/closeList";
     }
 
@@ -226,9 +234,11 @@ public class UserController {
      * @return
      */
     @RequestMapping("/getCloseUserByLoginName")
-    public String getCloseUserByLoginName(String loginname,Model model){
-        List<User> users=userService.getCloseUserByLoginName(loginname);
-        model.addAttribute("closeList",users);
+    public String getCloseUserByLoginName(String loginname,Model model,@RequestParam(value = "pn",defaultValue = "1")Integer pn){
+        PageHelper.startPage(pn,5);
+        List<User> lists = userService.getCloseUserByLoginName(loginname);
+        PageInfo<User> pageInfo = new PageInfo<>(lists);
+        model.addAttribute("closeList",pageInfo);
         return "admin/closeList";
     }
     /**

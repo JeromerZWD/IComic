@@ -64,13 +64,13 @@
     </tr>
     </thead>
     <tbody>
-    <c:forEach items="${commentList}" var="user" varStatus="i">
+    <c:forEach items="${commentList.list}" var="user" varStatus="i">
         <tr>
-            <td>${i.count}</td>
+            <td>${i.count+(commentList.pageNum-1)*5}</td>
             <td>${user.userid }</td>
             <td>${user.comicid}</td>
             <td>${user.message }</td>
-            <td>${user.time}</td>
+            <td>${user.ctime}</td>
             <td>
                 <a href="#" class="btn btn-danger btn-xs" onclick="deleteComment(${user.id})">删除</a>
             </td>
@@ -81,11 +81,11 @@
 <div class="col-md-12 text-right">
     <nav>
         <ul class="pagination">
-            <li ><a href="#">首页 </a></li>
-            <li ><a href="#">上一页 </a></li>
-            <li><a href="#">1</a></li>
-            <li ><a href="#">下一页</a></li>
-            <li ><a href="#">尾页</a></li>
+            <li ><a href="${pageContext.request.contextPath}/commentList?pn=1">首页 </a></li>
+            <li ><a href="${pageContext.request.contextPath}/commentList?pn=${commentList.pageNum-1}">上一页 </a></li>
+            <li><a href="#">${commentList.pageNum}</a></li>
+            <li ><a href="${pageContext.request.contextPath}/commentList?pn=${commentList.pageNum+1}">下一页</a></li>
+            <li ><a href="${pageContext.request.contextPath}/commentList?pn=${commentList.pages}">尾页</a></li>
         </ul>
     </nav>
 </div>

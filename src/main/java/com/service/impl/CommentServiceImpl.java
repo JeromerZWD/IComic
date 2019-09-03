@@ -27,4 +27,9 @@ public class CommentServiceImpl implements CommentService{
     public List<Comment> getCommentsByComicId(int comicid) {
         return commentMapper.getCommentsByComicId(comicid);
     }
+
+    @Override
+    public int addComment(Comment comment) {
+        return commentMapper.addComment(comment);
+    }
 }

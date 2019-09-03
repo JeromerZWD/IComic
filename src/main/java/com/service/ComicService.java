@@ -37,4 +37,10 @@ public interface ComicService {
     List<ComicList> getComicList(int comicid);
     //查询所有章节
     List<Chapter> getChapter();
+    //相似推荐
+    List<Comic> getLikeComic(int comicid);
+    //获取热度总数、
+    int getHeats();
+    //通过漫画名字模糊查询
+    List<Comic> getComicByLikeName(String comicname);
 }

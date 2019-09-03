@@ -17,7 +17,7 @@
     <!-- 搜索部分 -->
     <div class="panel-body">
         <form class="form-inline" method="get" action="${pageContext.request.contextPath}/getChapterByNumber">
-            <input type="hidden" name="comicid" value="${chapterList[0].comicid}">
+            <input type="hidden" name="comicid" value="${comicid}">
             <div class="form-group">
                 <label for="comicName">章节数</label>
                 <input type="text" class="form-control" id="comicName" name="cnumber">
@@ -38,9 +38,9 @@
     </tr>
     </thead>
     <tbody>
-    <c:forEach items="${chapterList}" var="user" varStatus="i">
+    <c:forEach items="${chapterList.list}" var="user" varStatus="i">
         <tr>
-            <td>${i.count}</td>
+            <td>${i.count+(chapterList.pageNum-1)*5}</td>
             <td>${user.cnumber}</td>
             <td>${user.cname}</td>
             <td>${user.ctime}</td>
@@ -56,11 +56,11 @@
 <div class="col-md-12 text-right">
     <nav>
         <ul class="pagination">
-            <li ><a href="#">首页 </a></li>
-            <li ><a href="#">上一页 </a></li>
-            <li><a href="#">1</a></li>
-            <li ><a href="#">下一页</a></li>
-            <li ><a href="#">尾页</a></li>
+            <li ><a href="${pageContext.request.contextPath}/chapterList?pn=1&comicid=${comicid}">首页 </a></li>
+            <li ><a href="${pageContext.request.contextPath}/chapterList?pn=${chapterList.pageNum-1}&comicid=${comicid}">上一页 </a></li>
+            <li><a href="#">${chapterList.pageNum}</a></li>
+            <li ><a href="${pageContext.request.contextPath}/chapterList?pn=${chapterList.pageNum+1}&comicid=${comicid}">下一页</a></li>
+            <li ><a href="${pageContext.request.contextPath}/chapterList?pn=${chapterList.pages}&comicid=${comicid}">尾页</a></li>
         </ul>
     </nav>
 </div>

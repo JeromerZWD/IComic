@@ -5,16 +5,18 @@ public class Comment {
     private int userid;
     private int comicid;
     private String message;
-    private String time;
+    private String ctime;
+    private User user;
 
     public Comment() { }
 
-    public Comment(int id, int userid, int comicid, String message, String time) {
+    public Comment(int id, int userid, int comicid, String message, String ctime, User user) {
         this.id = id;
         this.userid = userid;
         this.comicid = comicid;
         this.message = message;
-        this.time = time;
+        this.ctime = ctime;
+        this.user = user;
     }
 
     public int getId() {
@@ -49,12 +51,20 @@ public class Comment {
         this.message = message;
     }
 
-    public String getTime() {
-        return time;
+    public String getCtime() {
+        return ctime;
     }
 
-    public void setTime(String time) {
-        this.time = time;
+    public void setCtime(String ctime) {
+        this.ctime = ctime;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
     }
 
     @Override
@@ -64,7 +74,8 @@ public class Comment {
                 ", userid=" + userid +
                 ", comicid=" + comicid +
                 ", message='" + message + '\'' +
-                ", time='" + time + '\'' +
+                ", ctime='" + ctime + '\'' +
+                ", user=" + user +
                 '}';
     }
 }

@@ -106,13 +106,13 @@
                 <li>
                     <form class="search">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="搜索漫画">
+                            <input type="text" name="cname" class="form-control" placeholder="搜索漫画">
                         </div>
                     </form>
                 </li>
                 <li><a href="${pageContext.request.contextPath}/index" class="settings-txt">首页</a></li>
                 <li><a href="${pageContext.request.contextPath}/protfolio" class="settings-txt">分类</a></li>
-                <li><a href="blog.html" class="settings-txt">最近更新</a></li>
+                <li><a href="${pageContext.request.contextPath}/getUpdateChapter" class="settings-txt">最近更新</a></li>
                 <li><a href="${pageContext.request.contextPath}/pages/index/about.jsp" class="settings-txt">说明</a></li>
                 <li><a href="${pageContext.request.contextPath}/pages/index/contact.jsp" class="settings-txt">联系我们</a></li>
             </ul>
@@ -229,7 +229,7 @@
                             <div class="form-group">
                                 <label for="register_gender" class="col-sm-2 control-label">性别</label>
                                 <div class="col-sm-8">
-                                    <select id="register_gender" name="gender">
+                                    <select id="register_gender" name="gender" style="width: 370px;border-radius: 34px;height: 34px">
                                         <option value="男">男</option>
                                         <option value="女">女</option>
                                     </select>
@@ -295,7 +295,6 @@
         }
         function fun2(){
             $.post("${pageContext.request.contextPath}/exitUser");
-            window.location.href="${pageContext.request.contextPath}/index";
             window.location.reload();
         }
     </script>

@@ -91,7 +91,7 @@
         </div>
 <div class="col-xs-8 col-md-4 item">
     <a href="#" class="thumbnail">
-        <h2 class="title">10000+
+        <h2 class="title">${countHeat}
             <span class="glyphicon glyphicon-th-list right" aria-hidden="true"></span>
         </h2>
         <p>

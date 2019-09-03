@@ -15,14 +15,17 @@
         <result property="photopath" column="photopath"/>
         <result property="score" column="score"/>
         <result property="heat" column="heat"/>
-        <collection property="comicLists" ofType="com.entity.ComicList">
+        <collection property="comicLists" column="id" ofType="com.entity.ComicList" javaType="java.util.List" select="selectComicList">
             <id property="id" column="clid"/>
             <result property="comictype" column="comictype"/>
         </collection>
     </resultMap>
+    <select id="selectComicList" parameterType="int" resultType="com.entity.ComicList">
+select comiclist.* from comiclist,havelist where  havelist.comiclistid=comiclist.id and havelist.comicid=#{id}
+</select>
     <select id="getComics" resultMap="getComics">
 /*select * from comic order by updatetime DESC*/
-select comic.*,comiclist.id clid,comiclist.comictype from comic,havelist,comiclist WHERE comic.id=havelist.comicid and havelist.comiclistid=comiclist.id  order by comic.updatetime DESC
+	select * from comic order by updatetime DESC
 </select>
     <delete id="deleteComicById" parameterType="int">
  delete  from comic where id=#{id}
@@ -61,14 +64,34 @@ select comic.* from havelist,comic where comic.id=havelist.comicid and havelist.
     <insert id="addChapter" parameterType="com.entity.Chapter">
 insert into chapter(comicid,cnumber,cname,ctime,content) values(#{comicid},#{cnumber},#{cname},#{ctime},#{content})
 </insert>
-    <select id="getChaptersByComicId" parameterType="int" resultType="com.entity.Chapter">
-select * from chapter where comicid=#{comicid} order by ctime desc
+    <select id="getChaptersByComicId" parameterType="int" resultMap="getChapterByNumbers">
+select comic.*,chapter.id chaid,chapter.comicid,chapter.cnumber,chapter.cname,chapter.ctime,chapter.content from chapter,comic  where chapter.comicid=#{comicid} and chapter.comicid=comic.id order by ctime desc
 </select>
     <delete id="deleteChapterById" parameterType="int">
 delete from chapter where id=#{id}
 </delete>
-    <select id="getChapterByNumber"  resultType="com.entity.Chapter">
-select * from chapter where cnumber=#{cnumber} and comicid=#{comicid}
+    <resultMap id="getChapterByNumbers" type="com.entity.Chapter">
+        <id property="id" column="chaid"/>
+        <result property="comicid" column="comicid"/>
+        <result property="cnumber" column="cnumber"/>
+        <result property="cname" column="cname"/>
+        <result property="ctime" column="ctime"/>
+        <result property="content" column="content"/>
+        <association property="comic" javaType="com.entity.Comic">
+            <id property="id" column="id"/>
+            <result property="comicname" column="comicname"/>
+            <result property="author" column="author"/>
+            <result property="introduction" column="introduction"/>
+            <result property="ccode" column="ccode"/>
+            <result property="area" column="area"/>
+            <result property="updatetime" column="updatetime"/>
+            <result property="photopath" column="photopath"/>
+            <result property="score" column="score"/>
+            <result property="heat" column="heat"/>
+        </association>
+    </resultMap>
+    <select id="getChapterByNumber"  parameterType="com.entity.Chapter" resultMap="getChapterByNumbers">
+select comic.*,chapter.id chaid,chapter.comicid,chapter.cnumber,chapter.cname,chapter.ctime,chapter.content from chapter,comic where chapter.cnumber=#{cnumber} and chapter.comicid=#{comicid} and chapter.comicid=comic.id order by chapter.ctime desc
 </select>
     <update id="updateTime" parameterType="com.entity.Comic">
 update comic set updatetime=#{updatetime} where id=#{id}
@@ -82,7 +105,16 @@ update comic set heat=heat+1 where id=#{id}
     <select id="getComicList" parameterType="int" resultType="com.entity.ComicList">
 select comiclist.* from comiclist,havelist where havelist.comicid=#{comicid} and havelist.comiclistid=comiclist.id
 </select>
-    <select id="getChapter" resultType="com.entity.Chapter">
-select * from chapter order by ctime desc
+    <select id="getChapter" resultMap="getChapterByNumbers">
+select comic.*,chapter.id chaid,chapter.comicid,chapter.cnumber,chapter.cname,chapter.ctime,chapter.content from chapter,comic where chapter.comicid=comic.id order by chapter.ctime desc
+</select>
+    <select id="getLikeComic" parameterType="int" resultType="com.entity.Comic">
+SELECT comic.* FROM comic,havelist WHERE comic.id=havelist.comicid and havelist.comiclistid in (SELECT havelist.comiclistid FROM havelist WHERE havelist.comicid=#{comicid}) and havelist.comicid!=#{comicid} group by comic.id order by comic.heat desc
+</select>
+    <select id="getHeats" resultType="int">
+SELECT SUM(heat) FROM comic
+</select>
+    <select id="getComicByLikeName" parameterType="string" resultMap="getComics">
+select comic.*,comiclist.id clid,comiclist.comictype from comic,havelist,comiclist WHERE comic.id=havelist.comicid and havelist.comiclistid=comiclist.id  and comic.comicname like #{comicname} order by comic.updatetime DESC
 </select>
 </mapper>

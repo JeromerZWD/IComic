@@ -12,4 +12,6 @@ public interface CommentMapper {
     int deleteComment(int id);
     //通过漫画id或取所有评论
     List<Comment> getCommentsByComicId(int comicid);
+    //添加评论
+    int addComment(Comment comment);
 }

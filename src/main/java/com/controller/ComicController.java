@@ -1,9 +1,10 @@
 package com.controller;
 
-import com.entity.Chapter;
-import com.entity.Comic;
-import com.entity.HaveList;
+import com.entity.*;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.service.ComicService;
+import com.service.CommentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -24,16 +25,19 @@ import java.util.UUID;
 public class ComicController {
     @Autowired
     private ComicService comicService;
-
+    @Autowired
+    private CommentService commentService;
     /**
      * 查询所有漫画
      * @param model
      * @return
      */
     @RequestMapping("/getComics")
-    public String getComics(Model model){
-        List<Comic> list=comicService.getComics();
-        model.addAttribute("comicList",list);
+    public String getComics(Model model,@RequestParam(value = "pn",defaultValue = "1")Integer pn){
+        PageHelper.startPage(pn,5);
+        List<Comic> lists = comicService.getComics();
+        PageInfo<Comic> pageInfo = new PageInfo<>(lists);
+        model.addAttribute("comicList",pageInfo);
         return "admin/comicList";
     }
 
@@ -77,10 +81,12 @@ public class ComicController {
      * @return
      */
     @RequestMapping("/chapterList")
-    public String chapterList(int comicid,Model model){
-        System.out.println(comicid);
-        List<Chapter> list=comicService.getChaptersByComicId(comicid);
-        model.addAttribute("chapterList",list);
+    public String chapterList(int comicid,Model model,@RequestParam(value = "pn",defaultValue = "1")Integer pn){
+        PageHelper.startPage(pn,5);
+        List<Chapter> lists = comicService.getChaptersByComicId(comicid);
+            PageInfo<Chapter> pageInfo = new PageInfo<>(lists);
+            model.addAttribute("chapterList",pageInfo);
+            model.addAttribute("comicid",comicid);
         return "admin/chapterList";
     }
 
@@ -237,5 +243,52 @@ public class ComicController {
         List<Comic> list=comicService.getComicByTypeId(comiclistid);
         model.addAttribute("comicList",list);
         return "index/protfolio";
+    }
+    @RequestMapping("/getUpdateChapter")
+    public String getUpdateChapter(Model model){
+        List<Chapter> list=comicService.getChapter();
+        model.addAttribute("chapterList",list);
+        List<Comment> list1=commentService.getComments();
+        model.addAttribute("commentList",list1);
+        return "index/blog";
+    }
+    @RequestMapping("/getDetail")
+    public String getDetail(int id,Model model,@RequestParam(value = "pn",defaultValue = "1")Integer pn){
+        System.out.println(id+pn);
+        comicService.addHeat(id);
+        Comic comic=new Comic();
+        comic.setArea("国漫");
+        List<Comic> list=comicService.getComicSByOther(comic);
+        comic.setArea("日漫");
+        List<Comic> list1=comicService.getComicSByOther(comic);
+        comic.setArea("欧美");
+        List<Comic> list2=comicService.getComicSByOther(comic);
+        Comic comic1=comicService.getComicById(id);
+        List<Chapter> chapterList=comicService.getChaptersByComicId(id);
+        PageHelper.startPage(pn,10);
+        List<Comic> lists = comicService.getLikeComic(id);
+        PageInfo<Comic> pageInfo = new PageInfo<>(lists);
+       model.addAttribute("like",pageInfo);
+        model.addAttribute("guo",list);
+        model.addAttribute("ri",list1);
+        model.addAttribute("ou",list2);
+        model.addAttribute("comic",comic1);
+        model.addAttribute("chapterList",chapterList);
+        List<Comment> list3=commentService.getCommentsByComicId(id);
+        model.addAttribute("commentList",list3);
+        return "index/detail";
+    }
+    @RequestMapping("/getSingle")
+    public String getSingle(Chapter chapter,Model model){
+        List<Chapter> list=comicService.getChapterByNumber(chapter);
+        model.addAttribute("chapter",list.get(0));
+        return "index/single-blog";
+    }
+
+    @RequestMapping("/getComicByLikeName")
+    public String getComicByLikeName(Model model,String comicname){
+        List<Comic> list=comicService.getComicByLikeName(comicname);
+        model.addAttribute("comicList",list);
+        return "index/select";
     }
 }

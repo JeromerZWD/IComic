@@ -8,11 +8,12 @@ public class Chapter {
     private String ctime;
     private String content;
     private String comicname;
+    private Comic comic;
 
     public Chapter() {
     }
 
-    public Chapter(int id, int comicid, int cnumber, String cname, String ctime, String content, String comicname) {
+    public Chapter(int id, int comicid, int cnumber, String cname, String ctime, String content, String comicname, Comic comic) {
         this.id = id;
         this.comicid = comicid;
         this.cnumber = cnumber;
@@ -20,14 +21,7 @@ public class Chapter {
         this.ctime = ctime;
         this.content = content;
         this.comicname = comicname;
-    }
-
-    public String getComicname() {
-        return comicname;
-    }
-
-    public void setComicname(String comicname) {
-        this.comicname = comicname;
+        this.comic = comic;
     }
 
     public int getId() {
@@ -78,6 +72,22 @@ public class Chapter {
         this.ctime = ctime;
     }
 
+    public Comic getComic() {
+        return comic;
+    }
+
+    public void setComic(Comic comic) {
+        this.comic = comic;
+    }
+
+    public String getComicname() {
+        return comic.getComicname();
+    }
+
+    public void setComicname(String comicname) {
+        this.comicname = comicname;
+    }
+
     @Override
     public String toString() {
         return "Chapter{" +
@@ -88,6 +98,7 @@ public class Chapter {
                 ", ctime='" + ctime + '\'' +
                 ", content='" + content + '\'' +
                 ", comicname='" + comicname + '\'' +
+                ", comic=" + comic +
                 '}';
     }
 }

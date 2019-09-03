@@ -444,7 +444,7 @@ div.article-content {margin-bottom:50px}
 a.thumb-blog {position:relative;width:575px;height:310px;display:block;margin-bottom:20px}
 a.thumb-blog > span {display:none}
 a:hover.thumb-blog > span {display:block;background:url(../images/view-photo.png) no-repeat center center;width:575px;height:310px;position:absolute;z-index:1000}
-h2.blog-title {font:24px HelveticaLTStdBold, sans-serif;margin-bottom:17px}
+h2.blog-title {font:24px HelveticaLTStdBold, sans-serif;margin-bottom:17px;text-align: left;}
 .blog-excerpt {margin-bottom:20px}
 
 div.slider_thumb {padding-top:30px;margin-bottom:20px;display:block;overflow:hidden}

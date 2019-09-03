@@ -139,7 +139,7 @@
                 <ul class="scroll-band">
                     <c:forEach items="${heatList}" varStatus="i" var="comic" begin="0" end="10">
                     <li>
-                        <a href="detail.html" class="inline-border">
+                        <a href="${pageContext.request.contextPath}/getDetail?id=${comic.id}" class="inline-border">
                             <img src="/pic/${comic.photopath}" alt="" width="200" height="225" /></a>
                         <div class="info">
                             <a href="#" class="description center">
@@ -158,7 +158,7 @@
             <div class="projects-band-nohidden">
                 <ul class="newitem">
                     <c:forEach items="${timeList}" var="comic" end="9" begin="0">
-                    <li><a href="detail.html" class="inline-border"><img src="/pic/${comic.photopath}" alt="" width="200" height="225"></a>
+                    <li><a href="${pageContext.request.contextPath}/getDetail?id=${comic.id}" class="inline-border"><img src="/pic/${comic.photopath}" alt="" width="200" height="225"></a>
                         <div class="info">
                             <a href="#" class="description center">
                                 <h4 class="title mytext-title">${comic.comicname}</h4>
@@ -179,7 +179,7 @@
                         <span class="current-bg pr5">国漫热门排行</span></h1>
                     <ul class="nav nav-stacked">
                         <c:forEach items="${guo}" var="comic" begin="0" end="2" varStatus="i">
-                        <li class="rank-items"><a href="#">
+                        <li class="rank-items"><a href="${pageContext.request.contextPath}/getDetail?id=${comic.id}">
                             <img src="/pic/${comic.photopath}" alt="" class="rank-ican left">
                             <div class="rank-info left">
                                 <span class="rank-num left">${i.count}</span>
@@ -198,7 +198,7 @@
                     </h1>
                     <ul class="nav nav-stacked">
                         <c:forEach items="${ri}" varStatus="i" end="2" begin="0" var="comic">
-                        <li class="rank-items"><a href="#">
+                        <li class="rank-items"><a href="${pageContext.request.contextPath}/getDetail?id=${comic.id}">
                             <img src="/pic/${comic.photopath}" alt="" class="rank-ican left">
                             <div class="rank-info left">
                                 <span class="rank-num left">${i.count}</span>
@@ -216,7 +216,7 @@
                         <span class="current-bg pr5">欧美热门排行</span></h1>
                     <ul class="nav nav-stacked">
                         <c:forEach items="${ou}" var="comic" begin="0" end="2" varStatus="i">
-                        <li class="rank-items"><a href="#">
+                        <li class="rank-items"><a href="${pageContext.request.contextPath}/getDetail?id=${comic.id}">
                             <img src="/pic/${comic.photopath}" alt="" class="rank-ican left">
                             <div class="rank-info left">
                                 <span class="rank-num left">${i.count}</span>
@@ -256,9 +256,9 @@
                     </div>
                     <p class="mytext-title">声明：Imanb爱漫吧为纯属个人学习项目，仅作为学习网站部署搭建学习所用，并不具备版权，广大读者老爷们如果喜欢，且有支付能力，请您一定支持正版。</p>
                     <div class="more-proj">
-                        <a href="#" class="inline-border standart-button-style mln settings-clr"><span
+                        <a href="${pageContext.request.contextPath}/pages/index/about.jsp" class="inline-border standart-button-style mln settings-clr"><span
                                 class="over5">关于我们</span></a>
-                        <a href="#" class="inline-border standart-button-style settings-clr"><span
+                        <a href="${pageContext.request.contextPath}/pages/index/contact.jsp" class="inline-border standart-button-style settings-clr"><span
                                 class="over5">联系我们</span></a>
                     </div>
                 </div> <!-- end of our team -->
@@ -270,7 +270,7 @@
                     <c:forEach items="${zhang}" var="chapter" varStatus="i" end="2" begin="0">
                     <div class="blog-entry">
                         <div class="blog-excerpt">
-                            <h2><a href="#">${chapter.comicname}第${chapter.cnumber}话：${chapter.cname}</a></h2>
+                            <h2><a href="${pageContext.request.contextPath}/getSingle?comicid=${chapter.comicid}&cnumber=${chapter.cnumber}">${chapter.comicname}第${chapter.cnumber}话：${chapter.cname}</a></h2>
                             <p class="mytext-p2">更新时间:${chapter.ctime} </p>
                         </div>
                     </div>

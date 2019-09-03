@@ -40,12 +40,14 @@ public class AdminController {
         int conutClose=userService.getCloseUsers().size();
         int countComment=commentService.getComments().size();
         int countComic=comicService.getComics().size();
+        int countHeat=comicService.getHeats();
         model.addAttribute("countUser",countUser);
         model.addAttribute("countMessage",countMessage);
         model.addAttribute("countAdmin",countAdmin);
         model.addAttribute("countClose",conutClose);
         model.addAttribute("countComment",countComment);
         model.addAttribute("countComic",countComic);
+        model.addAttribute("countHeat",countHeat);
         return "admin/home";
     }
 }

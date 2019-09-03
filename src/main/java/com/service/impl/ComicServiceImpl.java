@@ -149,4 +149,32 @@ public class ComicServiceImpl implements ComicService {
     public List<Chapter> getChapter() {
         return comicMapper.getChapter();
     }
+
+    @Override
+    public List<Comic> getLikeComic(int comicid) {
+        List<Comic> list=comicMapper.getLikeComic(comicid);
+        for (Comic c:list) {
+            String S="";
+            List<ComicList> list1=comicMapper.getComicList(c.getId());
+            for (int i=0;i<list1.size();i++){
+                String s=list1.get(i).getComictype();
+                S=S+s;
+                if (i<list1.size()-1){
+                    S=S+"/";
+                }
+            }
+            c.setComicListsString(S);
+        }
+        return list;
+    }
+
+    @Override
+    public int getHeats() {
+        return comicMapper.getHeats();
+    }
+
+    @Override
+    public List<Comic> getComicByLikeName(String comicname) {
+        return comicMapper.getComicByLikeName(comicname);
+    }
 }

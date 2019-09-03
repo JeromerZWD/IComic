@@ -19,6 +19,7 @@ a:hover, a:focus {
 .mytext-title2{
     font-weight: bolder;
     font:28px HelveticaLTStdRoman, sans-serif;
+    text-align: left;
 }
 .mytext-title2-ml{
     font-weight: bolder;
@@ -591,6 +592,7 @@ div#catalog .catalog-info div.projects-band-nohidden ul li a {
 }
 div#catalog .catalog-info div.projects-band-nohidden ul li img{
     width: 160px;
+    height: 190px;
 }
 /* 右边内容 */
 div#catalog .ranks{

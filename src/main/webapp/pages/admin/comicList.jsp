@@ -67,12 +67,12 @@
     </tr>
     </thead>
     <tbody>
-    <c:forEach items="${comicList}" var="user" varStatus="i">
+    <c:forEach items="${comicList.list}" var="user" varStatus="i">
         <tr>
-            <td>${i.count}</td>
+            <td>${i.count+(comicList.pageNum-1)*5}</td>
             <td>${user.comicname }</td>
             <td>${user.author}</td>
-            <td>${user.code}</td>
+            <td>${user.ccode}</td>
             <td>${user.area}</td>
             <td>${user.updatetime}</td>
             <td>${user.score}</td>
@@ -88,11 +88,11 @@
 <div class="col-md-12 text-right">
     <nav>
         <ul class="pagination">
-            <li ><a href="#">首页 </a></li>
-            <li ><a href="#">上一页 </a></li>
-            <li><a href="#">1</a></li>
-            <li ><a href="#">下一页</a></li>
-            <li ><a href="#">尾页</a></li>
+            <li ><a href="${pageContext.request.contextPath}/getComics?pn=1">首页 </a></li>
+            <li ><a href="${pageContext.request.contextPath}/getComics?pn=${comicList.pageNum-1}">上一页 </a></li>
+            <li><a href="#">${comicList.pageNum}</a></li>
+            <li ><a href="${pageContext.request.contextPath}/getComics?pn=${comicList.pageNum+1}">下一页</a></li>
+            <li ><a href="${pageContext.request.contextPath}/getComics?pn=${comicList.pages}">尾页</a></li>
         </ul>
     </nav>
 </div>
