@@ -12,7 +12,7 @@
 
 ## 2.开发流程（需求分析，数据库设计，前端页面模板）
 
-![image](https://github.com/JeromerZWD/img1/blob/master/img/11.png) 
+![image](https://github.com/JeromerZWD/img1/blob/master/img/11.png)
 
 ![image](https://github.com/JeromerZWD/img1/blob/master/img/22.png) 
 
