@@ -68,4 +68,40 @@
 
 ![image](https://github.com/JeromerZWD/img1/blob/master/img/08.png) 
 
+### 3.2后台页面
+
+#### 3.2.1管理员登录
+
+![image](https://github.com/JeromerZWD/img1/blob/master/img/91.png) 
+
+#### 3.2.2后台主页
+
+![image](https://github.com/JeromerZWD/img1/blob/master/img/92.png) 
+
+#### 3.2.3用户管理
+
+![image](https://github.com/JeromerZWD/img1/blob/master/img/93.png) 
+
+#### 3.2.4漫画管理
+
+![image](https://github.com/JeromerZWD/img1/blob/master/img/94.png) 
+
+#### 3.2.5章节管理
+
+![image](https://github.com/JeromerZWD/img1/blob/master/img/95.png) 
+
+#### 3.2.6评论管理
+
+![image](https://github.com/JeromerZWD/img1/blob/master/img/95.png) 
+
+#### 3.2.7消息管理
+
+![image](https://github.com/JeromerZWD/img1/blob/master/img/96.png) 
+
+#### 3.2.8封号管理
+
+![image](https://github.com/JeromerZWD/img1/blob/master/img/97.png) 
+
+
+
 
