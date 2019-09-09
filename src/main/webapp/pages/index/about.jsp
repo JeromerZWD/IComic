@@ -119,15 +119,15 @@
     <div class="space30"></div>
     <div class="column-grid">
         <div class="threecol">
-            <p>Comic net, mainly provides the latest hot anime such as One Piece, Naruto, Death, Fairy Tail,
+            <p>IComic net, mainly provides the latest hot anime such as One Piece, Naruto, Death, Fairy Tail,
                 and the Japanese anime recommendation list, mainly to provide anime fans with the latest popular Japanese anime.
-                For example, the content of the idler animation encyclopedia website mainly involves the most professional
-                animation portals such as Xinfan Animation, Anime News, Anime Gallery, Online Manga, Manga Daquan, etc.,
-                aiming to disseminate the latest animation information, and daily update the online animation service platform. </p>
-            <p>So far, the Comics Network has launched a variety of different sections.
-                At the same time, it provides a more diversified choice for all animation enthusiasts
-                from different levels and different angles.
-                In addition, the idler animation network also brings unlimited joy to the anime fans.
+                The content mainly involves the most professional animation portals such as Xin Fan Animation, Anime News, Anime Gallery,
+                Online Manga, Manga Daquan, etc., aiming to disseminate the latest animation information,
+                daily update of online animation service platform, and become a professional online animation in China.
+                The first website of comics. </p>
+            <p>So far, the Leisure IComics Network has launched a variety of different sections.
+                At the same time, it provides a more diversified choice for all animation enthusiasts from different levels and different angles.
+                In addition, the comics network also brings unlimited joy to the anime fans.
                 The comics are deeply loved by teenagers.</p>
         </div>
         <div class="threecol">

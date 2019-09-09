@@ -100,7 +100,7 @@
 <div class="elastic">
     <!-- 头部 -->
     <div id="header" class="grid-clear">
-        <div class="grid" id="logo"><a href="${pageContext.request.contextPath}/index" class="settings-text">I❤Man 爱漫吧</a></div>
+        <div class="grid" id="logo"><a href="${pageContext.request.contextPath}/index" class="settings-text">IComic漫画网</a></div>
         <div class="grid main-menu-block">
             <ul id="main-menu">
                 <li>

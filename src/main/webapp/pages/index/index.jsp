@@ -10,7 +10,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>I❤Manb 爱漫吧</title>
+    <title>IComic漫画网</title>
     <meta name="keywords" content="GFX, design" />
     <meta name="description" content="GFX Design" />
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/reset.css" />
@@ -254,7 +254,7 @@
                                     src="${pageContext.request.contextPath}/images/slider/project_1.jpg" width="90" height="90" alt="" /></a></li>
                         </ul>
                     </div>
-                    <p class="mytext-title">声明：Imanb爱漫吧为纯属个人学习项目，仅作为学习网站部署搭建学习所用，并不具备版权，广大读者老爷们如果喜欢，且有支付能力，请您一定支持正版。</p>
+                    <p class="mytext-title">声明：IComic漫画网为纯属个人学习项目，仅作为学习网站部署搭建学习所用，并不具备版权，广大读者老爷们如果喜欢，且有支付能力，请您一定支持正版。</p>
                     <div class="more-proj">
                         <a href="${pageContext.request.contextPath}/pages/index/about.jsp" class="inline-border standart-button-style mln settings-clr"><span
                                 class="over5">关于我们</span></a>
