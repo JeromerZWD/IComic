@@ -11,4 +11,4 @@
 数据来源于第三方平台，不做于任何商业用途，如有侵权，立刻删除。
 
 ## 2.开发流程（需求分析，数据库设计，前端页面模板）
-![github](http://github.com/unicorn.png "需求分析") 
+![github](https://github.com/JeromerZWD/img1/blob/master/img/11.png "需求分析") 
