@@ -90,18 +90,8 @@
 
 ![image](https://github.com/JeromerZWD/img1/blob/master/img/95.png) 
 
-#### 3.2.6评论管理
+## 4.项目总结
 
-![image](https://github.com/JeromerZWD/img1/blob/master/img/95.png) 
-
-#### 3.2.7消息管理
-
-![image](https://github.com/JeromerZWD/img1/blob/master/img/96.png) 
-
-#### 3.2.8封号管理
-
-![image](https://github.com/JeromerZWD/img1/blob/master/img/97.png) 
-
-
+待开发/完善功能
 
 
