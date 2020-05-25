@@ -10,7 +10,8 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>I❤Manb 爱漫吧</title>
+    <title>IComic漫画网</title>
+    <link rel="shortcut icon"	href="/pic/userPath/1.png">
     <meta name="keywords" content="GFX, design" />
     <meta name="description" content="GFX Design" />
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/reset.css" />
@@ -104,9 +105,9 @@
         <div class="grid main-menu-block">
             <ul id="main-menu">
                 <li>
-                    <form class="search">
+                    <form class="search" action="${pageContext.request.contextPath}/getComicByLikeName">
                         <div class="form-group">
-                            <input type="text" name="cname" class="form-control" placeholder="搜索漫画">
+                            <input type="text" name="comicname" class="form-control" placeholder="搜索漫画" >
                         </div>
                     </form>
                 </li>
@@ -176,7 +177,7 @@
                             <div class="form-group">
                                 <label for="login_pwd" class="col-sm-2 control-label">密码</label>
                                 <div class="col-sm-8">
-                                    <input type="text" class="form-control" id="login_pwd" placeholder="密码"
+                                    <input type="password" class="form-control" id="login_pwd" placeholder="密码"
                                            name="password">
                                 </div>
                             </div>
@@ -186,10 +187,8 @@
                                     <input type="text" class="form-control" id="login_code" placeholder="验证码"
                                            name="codes">
                                     <div class="code" style="float: right">
-                                        <img src="${pageContext.request.contextPath}/images/ia_10281.jpg" />
-                                        <a href="javascript:changeCode()">看不清换一张</a><br>
-                                        <!-- <img src="${pageContext.request.contextPath}/code" onclick="changeCode()" id="checkCodeImg"/>
-												<a href="javascript:changeCode()" >看不清换一张</a><br> -->
+                                       <img src="${pageContext.request.contextPath}/checkCode" onclick="changeCode()" id="checkCodeImg"/>
+												<a href="javascript:changeCode()" >看不清换一张</a><br>
                                     </div>
                                 </div>
                             </div>
@@ -215,7 +214,7 @@
                             <div class="form-group">
                                 <label for="register_loginPwd" class="col-sm-2 control-label">密码</label>
                                 <div class="col-sm-8">
-                                    <input type="text" class="form-control" id="register_loginPwd"
+                                    <input type="password" class="form-control" id="register_loginPwd"
                                            placeholder="密码" name="password">
                                 </div>
                             </div>
@@ -229,7 +228,7 @@
                             <div class="form-group">
                                 <label for="register_gender" class="col-sm-2 control-label">性别</label>
                                 <div class="col-sm-8">
-                                    <select id="register_gender" name="gender" style="width: 370px;border-radius: 34px;height: 34px">
+                                    <select id="register_gender" name="gender" style="width: 370px;border-radius: 34px;height: 34px;font-size: 14px;padding-left: 10px;color: #999999;">
                                         <option value="男">男</option>
                                         <option value="女">女</option>
                                     </select>
@@ -274,9 +273,10 @@
                     if(data =="ok"){
                         alert("用户注册成功！");
                         window.location.reload();
+                    }else if (data=="reset"){
+                        alert("该账号已存在，请重新输入！")
                     }else{
                         alert("用户注册失败！");
-                        window.location.reload();
                     }
                 });
         }
@@ -287,15 +287,22 @@
                 if(data =="ok"){
                     alert("用户登录成功！");
                     window.location.reload();
+                }else if (data =="key") {
+                    alert("验证码错误！");
+                }else if(data =="close"){
+                    alert("用户已被封号！");
                 }else{
                     alert("用户登录失败！");
-                    window.location.reload();
                 }
             });
         }
         function fun2(){
             $.post("${pageContext.request.contextPath}/exitUser");
             window.location.reload();
+        }
+        function changeCode() {
+            $.post("${pageContext.request.contextPath}/checkCode");
+            $("#checkCodeImg").attr("src","${pageContext.request.contextPath}/checkCode");
         }
     </script>
 </div>

@@ -10,9 +10,10 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>I❤Manb 爱漫吧</title>
     <meta name="keywords" content="GFX, design" />
     <meta name="description" content="GFX Design" />
+    <title>IComic漫画网</title>
+    <link rel="shortcut icon"	href="/pic/userPath/1.png">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/reset.css" />
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css" />`
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/myportfolio.css" />`

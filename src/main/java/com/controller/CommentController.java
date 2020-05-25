@@ -38,11 +38,19 @@ public class CommentController {
         }
     }
     @RequestMapping("/commentListByComicId")
-    public String commentListByComicId(Model model,int comicid){
-        List<Comment> list=commentService.getCommentsByComicId(comicid);
-        model.addAttribute("commentList",list);
+    public String commentListByComicId(Model model,int comicid,@RequestParam(value = "pn",defaultValue = "1")Integer pn){
+        PageHelper.startPage(pn,5);
+        List<Comment> lists = commentService.getCommentsByComicId(comicid);
+        PageInfo<Comment> pageInfo = new PageInfo<>(lists);
+        model.addAttribute("commentList",pageInfo);
         return "admin/commentList";
     }
+
+    /**
+     * 新增漫画评论
+     * @param comment
+     * @return
+     */
     @RequestMapping("/addComment")
     @ResponseBody
     public String addComment(Comment comment){

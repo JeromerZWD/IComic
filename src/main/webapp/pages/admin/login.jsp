@@ -9,6 +9,7 @@
 <html>
 <head>
     <title>后台管理登录页面</title>
+    <link rel="shortcut icon"	href="/pic/userPath/1.png">
     <link href="${pageContext.request.contextPath}/css/admin/style.css" rel="stylesheet" type="text/css" media="all" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">

@@ -14,6 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>封号列表</title>
+    <link rel="shortcut icon"	href="/pic/userPath/1.png">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/bootstrap.css">
     <script src="${pageContext.request.contextPath}/js/jquery-3.4.1.js"></script>
     <script src="${pageContext.request.contextPath}/js/bootstrap.js"></script>

@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: 17270
@@ -11,7 +12,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>I❤Manb 爱漫吧</title>
+    <title>IComic漫画网</title>
+    <link rel="shortcut icon"	href="/pic/userPath/1.png">
     <meta name="keywords" content="GFX, design" />
     <meta name="description" content="GFX Design" />
     <link rel="stylesheet" href="css/reset.css" />
@@ -79,7 +81,9 @@
                 </div>
                 <div class="grid article-content w775 pic-items" style="margin-bottom:0">
                     <ul class="pic-items">
-                        <li class="item"><img src="/pic/chapter/${chapter.content}" alt=""></li>
+                        <c:forEach items="${photoList}" var="context">
+                        <li class="item"><img src="/pic/chapter/${context}" alt=""></li>
+                        </c:forEach>
                     </ul>
                 </div>
             </div>

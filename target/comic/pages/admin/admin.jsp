@@ -12,6 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>后台管理页面</title>
+    <link rel="shortcut icon"	href="/pic/userPath/1.png">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/bootstrap.css">
     <script src="${pageContext.request.contextPath}/js/jquery-3.4.1.js"></script>
     <script src="${pageContext.request.contextPath}/js/bootstrap.js"></script>
@@ -44,7 +45,7 @@
                                                                 aria-hidden="true"></span> </button></div>
     <ul class="nav navbar-nav navbar-right">
         <li>
-            <a href="#"><span style="display: inline-block;line-height: 70px; color: #ABAFC1"> ${adminUser}</span>
+            <a href="#"><span style="display: inline-block;line-height: 70px; color: #ABAFC1"> ${adminUser.username}</span>
                 <!--<div class="img" style="float: right;margin: 10px;">
                     <img src="../../img/user/user.JPEG" width="50px" style="border-radius:50%"></div>-->
             </a>

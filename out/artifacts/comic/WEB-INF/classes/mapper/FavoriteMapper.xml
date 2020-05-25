@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.FavoriteMapper">
+    <resultMap id="getFavorite" type="com.entity.Favorite">
+        <id property="id" column="id"/>
+        <result  column="user_id" property="userId"/>
+        <result column="comic_id" property="comicId"/>
+        <result column="favorite_time" property="favoriteTime"/>
+        <association property="comic" javaType="com.entity.Comic">
+            <result property="comicname" column="comicname"/>
+            <result property="author" column="author"/>
+            <result property="ccode" column="ccode"/>
+            <result property="updatetime" column="updatetime"/>
+            <result property="photopath" column="photopath"/>
+            <result property="score" column="score"/>
+            <result property="area" column="area"/>
+        </association>
+    </resultMap>
+    <delete id="removeFavorite" parameterType="int">
+    delete from favorite
+    where 1=1
+        <if test="id!=null">
+           and id=#{id}
+        </if>
+        <if test="userId!=null">
+            and user_id=#{userId}
+        </if>
+        <if test="comicId!=null">
+            and comic_id=#{comicId}
+        </if>
+</delete>
+    <select id="getFavorites" parameterType="com.entity.Favorite" resultMap="getFavorite">
+        select favorite.*,comic.comicname,comic.author,comic.ccode,comic.updatetime,comic.photopath,comic.score,comic.area
+        from favorite left join comic on comic.id=favorite.comic_id
+        where favorite.user_id=#{userId}
+        <if test="comicId !=null">
+            and favorite.comic_id=#{comicId}
+        </if>
+    </select>
+    <insert id="addFavorite" parameterType="com.entity.Favorite">
+insert into favorite(user_id,comic_id,favorite_time) values(#{userId},#{comicId},#{favoriteTime})
+</insert>
+</mapper>

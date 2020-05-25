@@ -24,29 +24,27 @@
 select comiclist.* from comiclist,havelist where  havelist.comiclistid=comiclist.id and havelist.comicid=#{id}
 </select>
     <select id="getComics" resultMap="getComics">
-/*select * from comic order by updatetime DESC*/
 	select * from comic order by updatetime DESC
 </select>
     <delete id="deleteComicById" parameterType="int">
  delete  from comic where id=#{id}
 </delete>
-    <select id="getComicSByOther" parameterType="com.entity.Comic" resultType="com.entity.Comic">
-select * from comic
-<where>
-<if test="comicname!=null and comicname!=''">
-comicname=#{comicname}
-</if>
-<if test="author!=null and author!=''">
-and author=#{author}
-</if>
-<if test="ccode!=null and ccode!=''">
-and ccode=#{ccode}
-</if>
-<if test="area!=null and area!=''">
-and area=#{area}
-</if>
-</where>
-order by heat desc
+    <select id="getComicSByOther" parameterType="com.entity.Comic" resultMap="getComics">
+	select * from comic
+	where 1=1
+	 <if test="comicname!=null and comicname!=''">
+         and comicname=#{comicname}
+     </if>
+        <if test="ccode!=null and ccode!=''">
+            and ccode=#{ccode}
+        </if>
+        <if test="area!=null and area!=''">
+            and area=#{area}
+        </if>
+        <if test="author!=null and author!=''">
+            and author=#{author}
+        </if>
+	 order by updatetime DESC
 </select>
     <select id="getComicById" parameterType="int" resultType="com.entity.Comic">
 select * from comic where id=#{id}
@@ -115,6 +113,6 @@ SELECT comic.* FROM comic,havelist WHERE comic.id=havelist.comicid and havelist.
 SELECT SUM(heat) FROM comic
 </select>
     <select id="getComicByLikeName" parameterType="string" resultMap="getComics">
-select comic.*,comiclist.id clid,comiclist.comictype from comic,havelist,comiclist WHERE comic.id=havelist.comicid and havelist.comiclistid=comiclist.id  and comic.comicname like #{comicname} order by comic.updatetime DESC
+select comic.*,comiclist.id clid,comiclist.comictype from comic,havelist,comiclist WHERE comic.id=havelist.comicid and havelist.comiclistid=comiclist.id  and comic.comicname like CONCAT('%',#{comicname},'%') group by comic.id order by comic.updatetime DESC
 </select>
 </mapper>

@@ -1,7 +1,8 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>IComic漫画网</title>
+    <link rel="shortcut icon"	href="/pic/userPath/1.png">
     <style>
         .pg_header{
             position: fixed;
@@ -147,7 +148,7 @@
         </div>
         <div class="menu">章节内容:</div>
         <div class="kong">
-            <input type="file" name="file" value="选择内容" accept="image/*">
+            <input type="file" name="file" multiple="multiple" value="选择内容" accept="image/*">
         </div>
         </div>
     <br>

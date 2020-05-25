@@ -6,6 +6,7 @@ import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.service.UserService;
+import com.utils.RandomCode;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpRequest;
 import org.springframework.stereotype.Controller;
@@ -16,6 +17,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.File;
 import java.io.IOException;
 import java.text.DateFormat;
@@ -49,31 +51,19 @@ public class UserController {
      * @param user
      * @return
      */
-    @RequestMapping("/saveUser")
-    @ResponseBody
-    public String saveUser(User user){
-        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        String dateString = formatter.format( new Date());
-        user.setRegisterTime(dateString);
-        int a=userService.saveUser(user);
-        if (a>0){
-            return "ok";
-        }else {
-            return "error";
-        }
-    }
-
-    /**
-     * 添加用户
-     * @param user
-     * @return
-     */
     @RequestMapping("/addUser")
     @ResponseBody
     public String addUser(User user){
+        User checkUser=new User();
+        checkUser.setLoginname(user.getLoginname());
+        List list=userService.getUserByOther(checkUser);
+        if (list!=null&&list.size()!=0){
+            return "reset";
+        }
         SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         String dateString = formatter.format( new Date());
         user.setRegisterTime(dateString);
+        //注册设置默认头像
         user.setPhotoPath("1.png");
         int a=userService.addUser(user);
         if (a>0){
@@ -85,15 +75,48 @@ public class UserController {
 
     @RequestMapping("/userLogin")
     @ResponseBody
-    public String adminLogin(User user,HttpServletRequest request){
+    public String adminLogin(User user, String codes, HttpServletRequest request){
+        String key= (String) request.getSession().getAttribute("randomcode_key");
+        if (!key.equalsIgnoreCase(codes)){
+            return "key";
+        }
         User list=userService.loginCheck(user);
         if (list!=null){
+            if (list.getCode()!=0){
+                return "close";
+            }
             request.getSession().setAttribute("userSession",list);
             return "ok";
         }else {
             return "error";
         }
     }
+
+    /**
+     * 获取生成验证码显示到 UI 界面
+     * @param request
+     * @param response
+     * @throws IOException
+     */
+    @RequestMapping(value="/checkCode")
+    public void checkCode(HttpServletRequest request, HttpServletResponse response){
+        //设置相应类型,告诉浏览器输出的内容为图片
+        response.setContentType("image/jpeg");
+
+        //设置响应头信息，告诉浏览器不要缓存此内容
+        response.setHeader("pragma", "no-cache");
+        response.setHeader("Cache-Control", "no-cache");
+        response.setDateHeader("Expire", 0);
+
+        RandomCode randomValidateCode = new RandomCode();
+        try {
+            //输出图片方法
+            randomValidateCode.getRandcode(request, response);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
 
     @RequestMapping("/exitUser")
     public void exitUser(HttpServletRequest request){

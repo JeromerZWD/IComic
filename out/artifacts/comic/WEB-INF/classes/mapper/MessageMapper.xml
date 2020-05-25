@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.MessageMapper">
+    <select id="getMessages" resultType="com.entity.Message">
+select * from message
+</select>
+    <delete id="deleteMessage" parameterType="int">
+delete from message where id=#{id}
+</delete>
+    <select id="countMessage" resultType="int">
+select count(*) from message
+</select>
+    <select id="getMessagesByName" parameterType="String" resultType="com.entity.Message">
+select * from message where 1=1
+<if test="name!=null">
+mname=#{name}
+</if>
+</select>
+    <insert id="addMessage" parameterType="com.entity.Message">
+insert into message(mname,email,message) values(#{mname},#{email},#{message})
+</insert>
+</mapper>

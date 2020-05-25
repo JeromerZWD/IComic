@@ -12,7 +12,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Title</title>
+    <title>Title</title>    
+    <link rel="shortcut icon"	href="/pic/userPath/1.png">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/bootstrap.css">
     <script src="${pageContext.request.contextPath}/js/jquery-3.4.1.js"></script>
     <script src="${pageContext.request.contextPath}/js/bootstrap.js"></script>
@@ -135,17 +136,6 @@
                             </select>
                         </div>
                     </div>
-                    <%--<div class="form-group">
-                        <label for="new_status" class="col-sm-2 control-label">身份</label>
-                        <div class="col-sm-4">
-                            <select class="form-control" id="new_status" name="status">
-                                <option value="1">用户</option>
-                                <option value="2">申请成为陪玩的用户</option>
-                                <option value="3">陪玩人员</option>
-                                <option value="0">管理员</option>
-                            </select>
-                        </div>
-                    </div>--%>
                 </form>
             </div>
             <div class="modal-footer">
@@ -173,9 +163,10 @@
                 if(data =="ok"){
                     alert("用户创建成功！");
                     window.location.reload();
-                }else{
+                }else if(data =="reset"){
+                        alert("该账号已存在！");
+                }else {
                     alert("用户创建失败！");
-                    window.location.reload();
                 }
             });
     }

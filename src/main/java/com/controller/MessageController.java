@@ -17,6 +17,13 @@ import java.util.List;
 public class MessageController {
         @Autowired
         private MessageService messageService;
+
+    /**
+     * 查询游客留言
+     * @param model
+     * @param pn
+     * @return
+     */
         @RequestMapping("/messageList")
         public String messageList(Model model,@RequestParam(value = "pn",defaultValue = "1")Integer pn){
             PageHelper.startPage(pn,5);
@@ -37,9 +44,11 @@ public class MessageController {
         }
 
      @RequestMapping("/getMessagesByName")
-    public String getMessagesByName(String name,Model model){
-        List<Message> list=messageService.getMessagesByName(name);
-        model.addAttribute("messageList",list);
+    public String getMessagesByName(String name,Model model, @RequestParam(value = "pn",defaultValue = "1")Integer pn){
+         PageHelper.startPage(pn,5);
+         List<Message> lists = messageService.getMessagesByName(name);
+         PageInfo<Message> pageInfo = new PageInfo<>(lists);
+        model.addAttribute("messageList",pageInfo);
             return "admin/messageList";
         }
 

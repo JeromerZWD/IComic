@@ -8,7 +8,8 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>IComic漫画网</title>
+    <link rel="shortcut icon"	href="/pic/userPath/1.png">
     <style>
         .pg_header{
             position: fixed;
@@ -147,8 +148,8 @@
         </div>
         <div class="menu">状态:</div>
         <div class="kong" style="width:200px;">
-            连载<input type="radio" name="code" value="连载" checked="checked">
-            完结<input type="radio" name="code" value="完结">
+            连载<input type="radio" name="ccode" value="连载" checked="checked">
+            完结<input type="radio" name="ccode" value="完结">
         </div>
         <div class="menu">地区:</div>
         <div class="kong">

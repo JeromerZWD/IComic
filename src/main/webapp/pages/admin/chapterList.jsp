@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Title</title>
+    <link rel="shortcut icon"	href="/pic/userPath/1.png">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/bootstrap.css">
     <script src="${pageContext.request.contextPath}/js/jquery-3.4.1.js"></script>
     <script src="${pageContext.request.contextPath}/js/bootstrap.js"></script>
@@ -13,6 +14,12 @@
 </head>
 <body>
 <h1>章节管理</h1><br>
+<%
+    Object o=request.getAttribute("isFlag");
+    if (o==null){
+        request.setAttribute("isFlag",false);
+    }
+%>
 <div class="panel panel-default">
     <!-- 搜索部分 -->
     <div class="panel-body">
@@ -44,7 +51,7 @@
             <td>${user.cnumber}</td>
             <td>${user.cname}</td>
             <td>${user.ctime}</td>
-            <td>${user.content}</td>
+            <td style="display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 5;">${user.content}</td>
             <td>
                 <a href="#" class="btn btn-danger btn-xs" onclick="deleteUser(${user.id})">删除章节</a>
                 <a href="${pageContext.request.contextPath}/pages/admin/addChapter.jsp?comicid=${user.comicid}" class="btn btn-primary btn-xs">添加章节</a>
@@ -53,6 +60,7 @@
     </c:forEach>
     </tbody>
 </table>
+<c:if test="${!isFlag}">
 <div class="col-md-12 text-right">
     <nav>
         <ul class="pagination">
@@ -64,6 +72,7 @@
         </ul>
     </nav>
 </div>
+</c:if>
 <script type="text/javascript">
     //删除章节
     function deleteUser(id) {

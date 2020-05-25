@@ -81,7 +81,10 @@ public class Chapter {
     }
 
     public String getComicname() {
-        return comic.getComicname();
+        if (comic!=null){
+            return comic.getComicname();
+        }
+        return null;
     }
 
     public void setComicname(String comicname) {

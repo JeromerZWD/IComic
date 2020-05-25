@@ -10,7 +10,8 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>I❤Manb 爱漫吧</title>
+    <title>IComic漫画网</title>
+    <link rel="shortcut icon"	href="/pic/userPath/1.png">
     <meta name="keywords" content="GFX, design" />
     <meta name="description" content="GFX Design" />
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/reset.css" />
@@ -42,6 +43,37 @@
                 });
             }
         }
+        function cancel() {
+                $.post("${pageContext.request.contextPath}/removeFavorite",
+                    $("#add_favorite").serialize(),
+                    function (data) {
+                        if(data =="ok"){
+                            alert("取消成功！");
+                            window.location.reload();
+                        }else{
+                            alert("取消失败！");
+                            window.location.reload();
+                        }
+                    });
+            }
+        function favorite() {
+            var user=$("#userSession_comment").val();
+            if (user==null||user==undefined||user==""){
+                alert("请先登录!")
+            }else{
+                $.post("${pageContext.request.contextPath}/addFavorite",
+                    $("#add_favorite").serialize(),
+                    function (data) {
+                        if(data =="ok"){
+                            alert("收藏成功！");
+                            window.location.reload();
+                        }else{
+                            alert("收藏失败！");
+                            window.location.reload();
+                        }
+                    });
+            }
+        }
     </script>
 </head>
 <body class="detail">
@@ -58,8 +90,12 @@
             <div class="more-info">
                 <h1 class="mytext-title2">${comic.comicname}</h1>
                 <div class="focus right">
-                    <button type="button" class="btn btn-danger">关注漫画</button>
-                    <button type="button" class="btn btn-primary">收藏漫画</button>
+                    <c:if test="${isFavorite}" var="isFavorite" scope="request">
+                        <button type="button" class="btn btn-danger" onclick="cancel()">取消收藏</button>
+                    </c:if>
+                    <c:if test="${!isFavorite}" var="isFavorite" scope="request">
+                        <button type="button" class="btn btn-primary" onclick="favorite()">收藏漫画</button>
+                    </c:if>
                     <button type="button" class="btn btn-success">分享漫画</button>
                 </div>
                 <h4 class="mytext-p3">作者：${comic.author}</h4>
@@ -113,7 +149,7 @@
                 <c:forEach items="${commentList}" var="coment" end="4" begin="0" varStatus="i">
                 <div class="comments-block">
                     <!--用户名-->
-                    <h3 class="com-author">用户:@${i.count}</h3>
+                    <h3 class="com-author">@by:${coment.user.username}</h3>
                     <!--评论时间-->
                     <p class="com-text mytext-p3">
                         ${coment.message}
@@ -197,6 +233,10 @@
         </div>
     </div>
 </div>
+<form  method="post" id="add_favorite">
+    <input type="hidden" name="userId" value="${userSession.id}">
+    <input type="hidden" name="comicId" value="${comic.id}">
+</form>
 <div class="clear"></div>
 <!-- 页脚 -->
 <!-- HERE START FOOTER -->

@@ -13,7 +13,10 @@ delete from message where id=#{id}
 select count(*) from message
 </select>
     <select id="getMessagesByName" parameterType="String" resultType="com.entity.Message">
-select * from message where name=#{name}
+select * from message where 1=1
+<if test="name!=null">
+ and mname=#{name}
+</if>
 </select>
     <insert id="addMessage" parameterType="com.entity.Message">
 insert into message(mname,email,message) values(#{mname},#{email},#{message})

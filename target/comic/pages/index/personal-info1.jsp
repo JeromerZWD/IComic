@@ -8,7 +8,8 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Detail Admin - My Info</title>
+    <title>IComic漫画网</title>
+    <link rel="shortcut icon"	href="/pic/userPath/1.png">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -52,6 +53,9 @@
         function fun3(){
             window.location.href="${pageContext.request.contextPath}/pages/index/personal-info.jsp";
         }
+        function fun6(){
+            window.location.href="${pageContext.request.contextPath}/getFavoritesByUserId?userId=${userSession.id}";
+        }
     </script>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
 <body>
@@ -59,7 +63,7 @@
 <!-- main container .wide-content is used for this layout without sidebar :)  -->
 
 <div class="content wide-content">
-    <button class="btn btn-primary" onclick="fun3()">基本信息</button><button class="btn btn-primary">修改密码</button>
+    <button class="btn btn-primary" onclick="fun3()">基本信息</button><button class="btn btn-primary">修改密码</button><button class="btn btn-primary" onclick="fun6()">我的收藏</button>
     <div class="container-fluid">
         <div class="settings-wrapper" id="pad-wrapper">
             <!-- avatar column -->

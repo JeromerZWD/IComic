@@ -5,21 +5,17 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.service.ComicService;
 import com.service.CommentService;
+import com.service.FavoriteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.multipart.MultipartFile;
 
-import java.io.File;
-import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.UUID;
+
+import javax.servlet.http.HttpServletRequest;
+import java.util.*;
 
 @Controller
 public class ComicController {
@@ -27,105 +23,9 @@ public class ComicController {
     private ComicService comicService;
     @Autowired
     private CommentService commentService;
-    /**
-     * 查询所有漫画
-     * @param model
-     * @return
-     */
-    @RequestMapping("/getComics")
-    public String getComics(Model model,@RequestParam(value = "pn",defaultValue = "1")Integer pn){
-        PageHelper.startPage(pn,5);
-        List<Comic> lists = comicService.getComics();
-        PageInfo<Comic> pageInfo = new PageInfo<>(lists);
-        model.addAttribute("comicList",pageInfo);
-        return "admin/comicList";
-    }
+    @Autowired
+    private FavoriteService favoriteService;
 
-    /**
-     * 新增漫画
-     * @param comic
-     * @return
-     */
-    @RequestMapping("/addComic")
-    public String addComic(Comic comic, MultipartFile file){
-        // 图片上传
-        // 设置图片名称，不能重复，可以使用uuid
-        String picName = UUID.randomUUID().toString();
-        // 获取文件名
-        String oriName = file.getOriginalFilename();
-        // 获取图片后缀
-        String extName = oriName.substring(oriName.lastIndexOf("."));
-        // 开始上传
-        try {
-            file.transferTo(new File("D:/upload/" + picName + extName));
-            /*model.addAttribute("pic",picName + extName);*/
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        comic.setPhotopath(picName + extName);
-        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
-        String dateString = formatter.format( new Date());
-        comic.setUpdatetime(dateString);
-        int a=comicService.addComic(comic);
-        if (a>0){
-            return "redirect:getComics";
-        }else {
-            return "admin/404";
-        }
-    }
-
-    /**
-     * 通过漫画id 查询所有章节
-     * @param comicid
-     * @param model
-     * @return
-     */
-    @RequestMapping("/chapterList")
-    public String chapterList(int comicid,Model model,@RequestParam(value = "pn",defaultValue = "1")Integer pn){
-        PageHelper.startPage(pn,5);
-        List<Chapter> lists = comicService.getChaptersByComicId(comicid);
-            PageInfo<Chapter> pageInfo = new PageInfo<>(lists);
-            model.addAttribute("chapterList",pageInfo);
-            model.addAttribute("comicid",comicid);
-        return "admin/chapterList";
-    }
-
-    /**
-     * 添加章节
-     * @param chapter
-     * @param file
-     * @return
-     */
-    @RequestMapping("/addChapter")
-    public String addChapter(Chapter chapter,MultipartFile file){
-        // 图片上传
-        // 设置图片名称，不能重复，可以使用uuid
-        String picName1 = UUID.randomUUID().toString();
-        // 获取文件名
-        String oriName1 = file.getOriginalFilename();
-        // 获取图片后缀
-        String extName1 = oriName1.substring(oriName1.lastIndexOf("."));
-        // 开始上传
-        try {
-            file.transferTo(new File("D:/upload/chapter/" + picName1 + extName1));
-            /*model.addAttribute("pic",picName + extName);*/
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        chapter.setContent(picName1 + extName1);
-        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
-        String dateString = formatter.format( new Date());
-        chapter.setCtime(dateString);
-        Comic comic=comicService.getComicById(chapter.getComicid());
-        comic.setUpdatetime(dateString);
-        comicService.updateTime(comic);
-        int a=comicService.addChapter(chapter);
-        if (a>0){
-            return "redirect:getComics";
-        }else {
-            return "admin/404";
-        }
-    }
 
     /**
      * 删除章节通过章节id
@@ -143,18 +43,7 @@ public class ComicController {
         }
     }
 
-    /**
-     * 通过章节数和漫画id 查询某章节
-     * @param chapter
-     * @param model
-     * @return
-     */
-    @RequestMapping("/getChapterByNumber")
-    public String getChapterByNumber(Chapter chapter,Model model){
-        List<Chapter> list=comicService.getChapterByNumber(chapter);
-        model.addAttribute("chapterList",list);
-        return "admin/chapterList";
-    }
+
     /**
      * 通过漫画类型id 查询漫画
      * @param comiclistid
@@ -168,18 +57,7 @@ public class ComicController {
         return "";
     }
 
-    /**
-     * 通过漫画名或作者或状态或地区 查询漫画
-     * @param comic
-     * @param model
-     * @return
-     */
-    @RequestMapping("/getComicSByOther")
-    public String getComicSByOther(Comic comic,Model model){
-        List<Comic> list=comicService.getComicSByOther(comic);
-        model.addAttribute("comicList",list);
-        return "admin/comicList";
-    }
+
 
     /**
      * 删除漫画 通过漫画id
@@ -199,7 +77,7 @@ public class ComicController {
     }
 
     /////////////////////////////////////////////
-    @RequestMapping("/index")
+    @RequestMapping({"/","/index"})
     public String index(Model model){
         Comic comic=new Comic();
         List<Comic> heatList=comicService.getComicSByOther(comic);
@@ -252,10 +130,22 @@ public class ComicController {
         model.addAttribute("commentList",list1);
         return "index/blog";
     }
+
+    /**
+     *
+     * 首页-通过漫画id获取漫画详情
+     * @param id
+     * @param model
+     * @param pn
+     * @param request
+     * @return
+     */
     @RequestMapping("/getDetail")
-    public String getDetail(int id,Model model,@RequestParam(value = "pn",defaultValue = "1")Integer pn){
-        System.out.println(id+pn);
+    public String getDetail(int id,Model model,HttpServletRequest request,
+                            @RequestParam(value = "pn",defaultValue = "1")Integer pn){
+        //对漫画进行热度+1
         comicService.addHeat(id);
+        //按地区对漫画进行排列
         Comic comic=new Comic();
         comic.setArea("国漫");
         List<Comic> list=comicService.getComicSByOther(comic);
@@ -265,6 +155,7 @@ public class ComicController {
         List<Comic> list2=comicService.getComicSByOther(comic);
         Comic comic1=comicService.getComicById(id);
         List<Chapter> chapterList=comicService.getChaptersByComicId(id);
+        //获取相似漫画列表并进行分页
         PageHelper.startPage(pn,10);
         List<Comic> lists = comicService.getLikeComic(id);
         PageInfo<Comic> pageInfo = new PageInfo<>(lists);
@@ -276,12 +167,27 @@ public class ComicController {
         model.addAttribute("chapterList",chapterList);
         List<Comment> list3=commentService.getCommentsByComicId(id);
         model.addAttribute("commentList",list3);
+        User user=(User) request.getSession().getAttribute("userSession");
+        model.addAttribute("isFavorite",false);
+        //收藏漫画接口处理
+        if (user!=null){
+            Favorite favorite=new Favorite();
+            favorite.setUserId(user.getId());
+            favorite.setComicId(id);
+            List<Favorite> favoriteList=favoriteService.getFavorites(favorite);
+            if (favoriteList!=null && favoriteList.size()!=0){
+                model.addAttribute("isFavorite",true);
+            }
+        }
         return "index/detail";
     }
+
     @RequestMapping("/getSingle")
     public String getSingle(Chapter chapter,Model model){
         List<Chapter> list=comicService.getChapterByNumber(chapter);
         model.addAttribute("chapter",list.get(0));
+        List<String> list1=Arrays.asList(list.get(0).getContent().split(","));
+        model.addAttribute("photoList",list1);
         return "index/single-blog";
     }
 

@@ -1,0 +1,32 @@
+ p,h1,h2,h3,h4{
+     text-decoration: none;
+     overflow: hidden;
+     padding: 0;
+     margin: 0;
+ }
+ body{
+    background-color: #E9ECF3;
+     height: 588px;
+ }
+ .main  {
+     height: 100%;
+     width: 100%;
+ }
+ .item{
+     background-color: #E9ECF3;
+ }
+ .title{
+    padding: 20px 20px 0px;
+}
+ .discription{
+     padding-top:5px; 
+     text-indent:20px; 
+     padding-bottom: 40px;
+ }
+ /* 设置图标右浮动 */
+ .right{
+     float:right;
+ }
+ a:-webkit-any-link{
+    text-decoration: none;
+ }

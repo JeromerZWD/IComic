@@ -11,6 +11,7 @@
 <head>
     <meta charset="UTF-8">
     <title>IComic漫画网</title>
+    <link rel="shortcut icon"	href="/pic/userPath/1.png">
     <meta name="keywords" content="GFX, design" />
     <meta name="description" content="GFX Design" />
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/reset.css" />
